@@ -1,14 +1,11 @@
-
 /*
  * Copyright (C) 2010-2013 Alibaba Group Holding Limited
  */
-
 
 #include <ngx_config.h>
 #include <ngx_core.h>
 #include <ngx_channel.h>
 #include <ngx_proc.h>
-
 
 static char *ngx_procs_block(ngx_conf_t *cf, ngx_command_t *cmd, void *conf);
 static void ngx_procs_cycle(ngx_cycle_t *cycle, void *data);

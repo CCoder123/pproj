@@ -88,6 +88,7 @@ private:
     Channel *_prev;     // ”√‘⁄¡¥±Ì
     Channel *_next;
 };
+
 }
 
 #endif /*CONNECTION_H_*/
