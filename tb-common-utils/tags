@@ -3,7 +3,7 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 ACLOCAL	tbnet/Makefile	/^ACLOCAL = ${SHELL} \/root\/github\/pproj\/tb-common-utils\/tbnet\/missing aclocal-1.13$/;"	m
 ACLOCAL	tbnet/src/Makefile	/^ACLOCAL = ${SHELL} \/root\/github\/pproj\/tb-common-utils\/tbnet\/missing aclocal-1.13$/;"	m
 ACLOCAL	tbnet/src/test/Makefile	/^ACLOCAL = ${SHELL} \/root\/github\/pproj\/tb-common-utils\/tbnet\/missing aclocal-1.13$/;"	m
@@ -122,8 +122,6 @@ AliveTest	tbsys/test/testthread.cpp	/^class AliveTest : public testBase$/;"	c	fi
 AliveTestThread	tbsys/test/testthread.cpp	/^    AliveTestThread(CondVar& childCreated, CondVar& parentReady ):$/;"	f	class:AliveTestThread
 AliveTestThread	tbsys/test/testthread.cpp	/^class AliveTestThread : public Thread$/;"	c	file:
 AliveTestThreadPtr	tbsys/test/testthread.cpp	/^typedef Handle<AliveTestThread> AliveTestThreadPtr;$/;"	t	file:
-BZIP2	tbnet/Makefile	/^	tardir=$(distdir) && $(am__tar) | BZIP2=$${BZIP2--9} bzip2 -c >$(distdir).tar.bz2$/;"	m
-BZIP2	tbsys/Makefile	/^	tardir=$(distdir) && $(am__tar) | BZIP2=$${BZIP2--9} bzip2 -c >$(distdir).tar.bz2$/;"	m
 BadPacket	tbnet/src/controlpacket.h	/^    static ControlPacket BadPacket;$/;"	m	class:tbnet::ControlPacket
 BadThreadControlException	tbsys/src/ThreadException.cpp	/^BadThreadControlException::BadThreadControlException(const char* file, int line) :$/;"	f	class:tbutil::BadThreadControlException
 BadThreadControlException	tbsys/src/ThreadException.h	/^class BadThreadControlException : public Exception$/;"	c	namespace:tbutil
@@ -151,13 +149,6 @@ CCDEPMODE	tbsys/src/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
 CCDEPMODE	tbsys/test/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
 CConfig	tbsys/src/config.cpp	/^    CConfig::CConfig()$/;"	f	class:tbsys::CConfig
 CConfig	tbsys/src/config.h	/^    class           CConfig {$/;"	c	namespace:tbsys
-CDPATH	tbnet/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
-CDPATH	tbnet/src/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
-CDPATH	tbnet/src/test/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
-CDPATH	tbnet/test/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
-CDPATH	tbsys/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
-CDPATH	tbsys/src/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
-CDPATH	tbsys/test/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
 CDefaultRunnable	tbsys/src/defaultrunnable.cpp	/^CDefaultRunnable::CDefaultRunnable(int threadCount) {$/;"	f	class:tbsys::CDefaultRunnable
 CDefaultRunnable	tbsys/src/defaultrunnable.h	/^class CDefaultRunnable : public Runnable {$/;"	c	namespace:tbsys
 CFLAGS	tbnet/Makefile	/^CFLAGS = -g -O2$/;"	m
@@ -180,9 +171,9 @@ CLockGuard	tbsys/src/tblockguard.h	/^        CLockGuard(const T& lock, bool bloc
 CLockGuard	tbsys/src/tblockguard.h	/^    class CLockGuard$/;"	c	namespace:tbsys
 CLogger	tbsys/src/tblog.cpp	/^CLogger::CLogger() $/;"	f	class:tbsys::CLogger
 CLogger	tbsys/src/tblog.h	/^class CLogger {$/;"	c	namespace:tbsys
-CMD_BAD_PACKET	tbnet/src/controlpacket.h	/^        CMD_BAD_PACKET = 1,$/;"	e	enum:tbnet::ControlPacket::<anonymous>
-CMD_DISCONN_PACKET	tbnet/src/controlpacket.h	/^        CMD_DISCONN_PACKET$/;"	e	enum:tbnet::ControlPacket::<anonymous>
-CMD_TIMEOUT_PACKET	tbnet/src/controlpacket.h	/^        CMD_TIMEOUT_PACKET,$/;"	e	enum:tbnet::ControlPacket::<anonymous>
+CMD_BAD_PACKET	tbnet/src/controlpacket.h	/^        CMD_BAD_PACKET = 1,$/;"	e	enum:tbnet::ControlPacket::__anon3
+CMD_DISCONN_PACKET	tbnet/src/controlpacket.h	/^        CMD_DISCONN_PACKET$/;"	e	enum:tbnet::ControlPacket::__anon3
+CMD_TIMEOUT_PACKET	tbnet/src/controlpacket.h	/^        CMD_TIMEOUT_PACKET,$/;"	e	enum:tbnet::ControlPacket::__anon3
 CMyHandler	tbsys/test/testfilequeue.cpp	/^class CMyHandler : public IQueueHandler$/;"	c	file:
 CMyHandler	tbsys/test/testqueuethread.cpp	/^class CMyHandler : public IQueueHandler$/;"	c	file:
 CNetUtil	tbsys/src/tbnetutil.h	/^class CNetUtil {$/;"	c	namespace:tbsys
@@ -239,12 +230,12 @@ CTAGS	tbsys/src/Makefile	/^CTAGS = ctags$/;"	m
 CTAGS	tbsys/test/Makefile	/^CTAGS = ctags$/;"	m
 CThread	tbsys/src/thread.h	/^    CThread() {$/;"	f	class:tbsys::CThread
 CThread	tbsys/src/thread.h	/^class CThread {$/;"	c	namespace:tbsys
-CThreadCond	tbnet/src/tbnet.h	/^class tbsys::CThreadCond;$/;"	m	class:tbnet::tbsys
+CThreadCond	tbnet/src/tbnet.h	/^class tbsys::CThreadCond;$/;"	m	class:tbnet::tbsys	typeref:class:tbnet::tbsys::
 CThreadCond	tbsys/src/threadcond.h	/^    CThreadCond() {$/;"	f	class:tbsys::CThreadCond
 CThreadCond	tbsys/src/threadcond.h	/^class CThreadCond : public CThreadMutex {$/;"	c	namespace:tbsys
 CThreadGuard	tbsys/src/threadmutex.h	/^    CThreadGuard(CThreadMutex *mutex)$/;"	f	class:tbsys::CThreadGuard
 CThreadGuard	tbsys/src/threadmutex.h	/^class CThreadGuard$/;"	c	namespace:tbsys
-CThreadMutex	tbnet/src/tbnet.h	/^class tbsys::CThreadMutex;$/;"	m	class:tbnet::tbsys
+CThreadMutex	tbnet/src/tbnet.h	/^class tbsys::CThreadMutex;$/;"	m	class:tbnet::tbsys	typeref:class:tbnet::tbsys::
 CThreadMutex	tbsys/src/threadmutex.h	/^    CThreadMutex() {$/;"	f	class:tbsys::CThreadMutex
 CThreadMutex	tbsys/src/threadmutex.h	/^class CThreadMutex {$/;"	c	namespace:tbsys
 CTimeUtil	tbsys/src/tbtimeutil.h	/^class CTimeUtil {$/;"	c	namespace:tbsys
@@ -328,9 +319,7 @@ ConstMemFun	tbsys/src/Functional.h	/^class ConstMemFun : public std::unary_funct
 ControlPacket	tbnet/src/controlpacket.h	/^    ControlPacket(int c) : _command(c) {}$/;"	f	class:tbnet::ControlPacket
 ControlPacket	tbnet/src/controlpacket.h	/^class ControlPacket : public Packet {$/;"	c	namespace:tbnet
 CreateProcess	tbnet/libtool	/^   CreateProcess().  We must quote the arguments since Win32 CreateProcess()$/;"	f
-CreateProcess	tbnet/ltmain.sh	/^   CreateProcess().  We must quote the arguments since Win32 CreateProcess()$/;"	f
 CreateProcess	tbsys/libtool	/^   CreateProcess().  We must quote the arguments since Win32 CreateProcess()$/;"	f
-CreateProcess	tbsys/ltmain.sh	/^   CreateProcess().  We must quote the arguments since Win32 CreateProcess()$/;"	f
 CtrlCHandler	tbsys/src/CtrlCHandler.cpp	/^CtrlCHandler::CtrlCHandler(CtrlCHandlerCallback callback)$/;"	f	class:tbutil::CtrlCHandler
 CtrlCHandler	tbsys/src/CtrlCHandler.h	/^class CtrlCHandler$/;"	c	namespace:tbutil
 CtrlCHandlerCallback	tbsys/src/CtrlCHandler.h	/^typedef void (*CtrlCHandlerCallback)(int);$/;"	t	namespace:tbutil
@@ -359,12 +348,6 @@ DEPDIR	tbnet/test/Makefile	/^DEPDIR = .deps$/;"	m
 DEPDIR	tbsys/Makefile	/^DEPDIR = .deps$/;"	m
 DEPDIR	tbsys/src/Makefile	/^DEPDIR = .deps$/;"	m
 DEPDIR	tbsys/test/Makefile	/^DEPDIR = .deps$/;"	m
-DESTDIR	tbnet/Makefile	/^	       && $(MAKE) $(AM_MAKEFLAGS) DESTDIR="$$dc_destdir" \\$/;"	m
-DESTDIR	tbnet/Makefile	/^	       && $(MAKE) $(AM_MAKEFLAGS) DESTDIR="$$dc_destdir" install \\$/;"	m
-DESTDIR	tbnet/Makefile	/^	       && $(MAKE) $(AM_MAKEFLAGS) DESTDIR="$$dc_destdir" uninstall \\$/;"	m
-DESTDIR	tbsys/Makefile	/^	       && $(MAKE) $(AM_MAKEFLAGS) DESTDIR="$$dc_destdir" \\$/;"	m
-DESTDIR	tbsys/Makefile	/^	       && $(MAKE) $(AM_MAKEFLAGS) DESTDIR="$$dc_destdir" install \\$/;"	m
-DESTDIR	tbsys/Makefile	/^	       && $(MAKE) $(AM_MAKEFLAGS) DESTDIR="$$dc_destdir" uninstall \\$/;"	m
 DISTFILES	tbnet/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
 DISTFILES	tbnet/src/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
 DISTFILES	tbnet/src/test/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
@@ -481,7 +464,6 @@ EchoServer	tbnet/test/echoserver.cpp	/^class EchoServer {$/;"	c	file:
 EchoServerAdapter	tbnet/test/echoserver.cpp	/^class EchoServerAdapter : public IServerAdapter$/;"	c	file:
 Entry	tbsys/src/profiler.h	/^	Entry(const std::string& message, Entry *parent, Entry *first) {$/;"	f	class:tbsys::util::Entry
 Entry	tbsys/src/profiler.h	/^class Entry$/;"	c	namespace:tbsys::util
-EpollSocketEeventTF	tbnet/src/test/epollsocketeventtf.cpp	/^CPPUNIT_TEST_SUITE_REGISTRATION(EpollSocketEeventTF);$/;"	v
 EpollSocketEventTF	tbnet/src/test/epollsocketeventtf.h	/^class EpollSocketEventTF : public CppUnit::TestFixture {$/;"	c	namespace:anet
 EventHandlerThread	tbsys/src/ThreadPool.cpp	/^ThreadPool::EventHandlerThread::EventHandlerThread(const ThreadPool* pool) $/;"	f	class:tbutil::ThreadPool::EventHandlerThread
 EventHandlerThread	tbsys/src/ThreadPool.h	/^    class EventHandlerThread : public tbutil::Thread$/;"	c	class:tbutil::ThreadPool
@@ -515,14 +497,6 @@ GREP	tbnet/test/Makefile	/^GREP = \/usr\/bin\/grep$/;"	m
 GREP	tbsys/Makefile	/^GREP = \/usr\/bin\/grep$/;"	m
 GREP	tbsys/src/Makefile	/^GREP = \/usr\/bin\/grep$/;"	m
 GREP	tbsys/test/Makefile	/^GREP = \/usr\/bin\/grep$/;"	m
-GZIP	tbnet/Makefile	/^	  GZIP=$(GZIP_ENV) gzip -dc $(distdir).shar.gz | unshar ;;\\$/;"	m
-GZIP	tbnet/Makefile	/^	  GZIP=$(GZIP_ENV) gzip -dc $(distdir).tar.gz | $(am__untar) ;;\\$/;"	m
-GZIP	tbnet/Makefile	/^	shar $(distdir) | GZIP=$(GZIP_ENV) gzip -c >$(distdir).shar.gz$/;"	m
-GZIP	tbnet/Makefile	/^	tardir=$(distdir) && $(am__tar) | GZIP=$(GZIP_ENV) gzip -c >$(distdir).tar.gz$/;"	m
-GZIP	tbsys/Makefile	/^	  GZIP=$(GZIP_ENV) gzip -dc $(distdir).shar.gz | unshar ;;\\$/;"	m
-GZIP	tbsys/Makefile	/^	  GZIP=$(GZIP_ENV) gzip -dc $(distdir).tar.gz | $(am__untar) ;;\\$/;"	m
-GZIP	tbsys/Makefile	/^	shar $(distdir) | GZIP=$(GZIP_ENV) gzip -c >$(distdir).shar.gz$/;"	m
-GZIP	tbsys/Makefile	/^	tardir=$(distdir) && $(am__tar) | GZIP=$(GZIP_ENV) gzip -c >$(distdir).tar.gz$/;"	m
 GZIP_ENV	tbnet/Makefile	/^GZIP_ENV = --best$/;"	m
 GZIP_ENV	tbsys/Makefile	/^GZIP_ENV = --best$/;"	m
 HEADERS	tbnet/src/Makefile	/^HEADERS = $(include_HEADERS)$/;"	m
@@ -565,19 +539,12 @@ INSTALL_HEADER	tbnet/test/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
 INSTALL_HEADER	tbsys/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
 INSTALL_HEADER	tbsys/src/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
 INSTALL_HEADER	tbsys/test/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
-INSTALL_PROGRAM	tbnet/Makefile	/^	  $(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \\$/;"	m
 INSTALL_PROGRAM	tbnet/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
-INSTALL_PROGRAM	tbnet/src/Makefile	/^	  $(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \\$/;"	m
 INSTALL_PROGRAM	tbnet/src/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
-INSTALL_PROGRAM	tbnet/src/test/Makefile	/^	  $(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \\$/;"	m
 INSTALL_PROGRAM	tbnet/src/test/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
-INSTALL_PROGRAM	tbnet/test/Makefile	/^	  $(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \\$/;"	m
 INSTALL_PROGRAM	tbnet/test/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
-INSTALL_PROGRAM	tbsys/Makefile	/^	  $(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \\$/;"	m
 INSTALL_PROGRAM	tbsys/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
-INSTALL_PROGRAM	tbsys/src/Makefile	/^	  $(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \\$/;"	m
 INSTALL_PROGRAM	tbsys/src/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
-INSTALL_PROGRAM	tbsys/test/Makefile	/^	  $(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \\$/;"	m
 INSTALL_PROGRAM	tbsys/test/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
 INSTALL_SCRIPT	tbnet/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
 INSTALL_SCRIPT	tbnet/src/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
@@ -586,13 +553,6 @@ INSTALL_SCRIPT	tbnet/test/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
 INSTALL_SCRIPT	tbsys/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
 INSTALL_SCRIPT	tbsys/src/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
 INSTALL_SCRIPT	tbsys/test/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
-INSTALL_STRIP_FLAG	tbnet/Makefile	/^	    install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
-INSTALL_STRIP_FLAG	tbnet/src/Makefile	/^	    install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
-INSTALL_STRIP_FLAG	tbnet/src/test/Makefile	/^	    install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
-INSTALL_STRIP_FLAG	tbnet/test/Makefile	/^	    install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
-INSTALL_STRIP_FLAG	tbsys/Makefile	/^	    install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
-INSTALL_STRIP_FLAG	tbsys/src/Makefile	/^	    install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
-INSTALL_STRIP_FLAG	tbsys/test/Makefile	/^	    install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
 INSTALL_STRIP_PROGRAM	tbnet/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
 INSTALL_STRIP_PROGRAM	tbnet/src/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
 INSTALL_STRIP_PROGRAM	tbnet/src/test/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
@@ -915,7 +875,6 @@ Packet	tbnet/src/packet.h	/^class Packet {$/;"	c	namespace:tbnet
 PacketHeader	tbnet/src/packet.h	/^class PacketHeader {$/;"	c	namespace:tbnet
 PacketQueue	tbnet/src/packetqueue.cpp	/^PacketQueue::PacketQueue() {$/;"	f	class:tbnet::PacketQueue
 PacketQueue	tbnet/src/packetqueue.h	/^class PacketQueue {$/;"	c	namespace:tbnet
-PacketQueueTF	tbnet/src/test/packetqueuetf.cpp	/^CPPUNIT_TEST_SUITE_REGISTRATION(PacketQueueTF);$/;"	v
 PacketQueueTF	tbnet/src/test/packetqueuetf.h	/^class PacketQueueTF : public CppUnit::TestFixture {$/;"	c	namespace:anet
 PacketQueueThread	tbnet/src/packetqueuethread.cpp	/^PacketQueueThread::PacketQueueThread() : tbsys::CDefaultRunnable() {$/;"	f	class:tbnet::PacketQueueThread
 PacketQueueThread	tbnet/src/packetqueuethread.cpp	/^PacketQueueThread::PacketQueueThread(int threadCount, IPacketQueueHandler *handler, void *args)$/;"	f	class:tbnet::PacketQueueThread
@@ -1020,7 +979,6 @@ Socket	tbnet/src/socket.h	/^class Socket {$/;"	c	namespace:tbnet
 SocketEvent	tbnet/src/socketevent.cpp	/^SocketEvent::SocketEvent() {$/;"	f	class:tbnet::SocketEvent
 SocketEvent	tbnet/src/socketevent.h	/^class SocketEvent {$/;"	c	namespace:tbnet
 SocketPair	tbnet/src/test/sockettf.cpp	/^struct SocketPair {$/;"	s	namespace:anet	file:
-SocketTF	tbnet/src/test/sockettf.cpp	/^CPPUNIT_TEST_SUITE_REGISTRATION(SocketTF);$/;"	v
 SocketTF	tbnet/src/test/sockettf.h	/^class SocketTF : public CppUnit::TestFixture {$/;"	c	namespace:anet
 StatCounter	tbnet/src/stats.cpp	/^StatCounter::StatCounter() {$/;"	f	class:tbnet::StatCounter
 StatCounter	tbnet/src/stats.h	/^class StatCounter {$/;"	c	namespace:tbnet
@@ -1034,9 +992,9 @@ TBFQ_MAX_FILE_SIZE	tbsys/src/filequeue.h	30;"	d
 TBFQ_MAX_THREAD_COUNT	tbsys/src/filequeue.h	31;"	d
 TBNET_CHANNEL_H_	tbnet/src/channel.h	17;"	d
 TBNET_CHANNEL_POOL_H_	tbnet/src/channelpool.h	17;"	d
-TBNET_CLOSED	tbnet/src/iocomponent.h	/^        TBNET_CLOSED,$/;"	e	enum:tbnet::IOComponent::<anonymous>
-TBNET_CONNECTED	tbnet/src/iocomponent.h	/^        TBNET_CONNECTED,$/;"	e	enum:tbnet::IOComponent::<anonymous>
-TBNET_CONNECTING	tbnet/src/iocomponent.h	/^        TBNET_CONNECTING = 1,$/;"	e	enum:tbnet::IOComponent::<anonymous>
+TBNET_CLOSED	tbnet/src/iocomponent.h	/^        TBNET_CLOSED,$/;"	e	enum:tbnet::IOComponent::__anon2
+TBNET_CONNECTED	tbnet/src/iocomponent.h	/^        TBNET_CONNECTED,$/;"	e	enum:tbnet::IOComponent::__anon2
+TBNET_CONNECTING	tbnet/src/iocomponent.h	/^        TBNET_CONNECTING = 1,$/;"	e	enum:tbnet::IOComponent::__anon2
 TBNET_CONNECTION_H_	tbnet/src/connection.h	17;"	d
 TBNET_CONNECTION_MANAGER_H_	tbnet/src/connectionmanager.h	17;"	d
 TBNET_CONN_MAP	tbnet/src/connectionmanager.h	/^typedef __gnu_cxx::hash_map<uint64_t, Connection*, __gnu_cxx::hash<int> > TBNET_CONN_MAP;$/;"	t	namespace:tbnet
@@ -1080,7 +1038,7 @@ TBNET_TCPCONNECTION_H_	tbnet/src/tcpconnection.h	17;"	d
 TBNET_TRANSPORT_H_	tbnet/src/transport.h	17;"	d
 TBNET_UDPCOMPONENT_H_	tbnet/src/udpcomponent.h	17;"	d
 TBNET_UDPCONNECTION_H_	tbnet/src/udpconnection.h	17;"	d
-TBNET_UNCONNECTED	tbnet/src/iocomponent.h	/^        TBNET_UNCONNECTED$/;"	e	enum:tbnet::IOComponent::<anonymous>
+TBNET_UNCONNECTED	tbnet/src/iocomponent.h	/^        TBNET_UNCONNECTED$/;"	e	enum:tbnet::IOComponent::__anon2
 TBSYSEX_THREAD_H	tbsys/src/TbThread.h	17;"	d
 TBSYS_ATOMIC_H	tbsys/src/atomic.h	37;"	d
 TBSYS_COND_H	tbsys/src/Cond.h	17;"	d
@@ -1211,8 +1169,6 @@ VERSION	tbsys/Makefile	/^VERSION = 0.1$/;"	m
 VERSION	tbsys/src/Makefile	/^VERSION = 0.1$/;"	m
 VERSION	tbsys/test/Makefile	/^VERSION = 0.1$/;"	m
 WRITE_PRIORITY	tbsys/src/tbrwlock.h	/^        WRITE_PRIORITY,$/;"	e	enum:tbsys::ELockMode
-XZ_OPT	tbnet/Makefile	/^	tardir=$(distdir) && $(am__tar) | XZ_OPT=$${XZ_OPT--e} xz -c >$(distdir).tar.xz$/;"	m
-XZ_OPT	tbsys/Makefile	/^	tardir=$(distdir) && $(am__tar) | XZ_OPT=$${XZ_OPT--e} xz -c >$(distdir).tar.xz$/;"	m
 _UUID_Count	tbsys/test/testnetutil.cpp	/^int _UUID_Count = time(NULL);$/;"	v
 _UUID_HostIp	tbsys/test/testnetutil.cpp	/^int _UUID_HostIp = 0;$/;"	v
 __DLINK_LIST__	tbsys/src/linklist.h	17;"	d
@@ -1227,7 +1183,7 @@ __setNoDelete	tbsys/src/Shared.cpp	/^void Shared::__setNoDelete(bool b)$/;"	f	cl
 __setNoDelete	tbsys/src/Shared.h	/^    void __setNoDelete(bool b)$/;"	f	class:tbutil::SimpleShared
 _acquired	tbsys/src/Lock.h	/^    mutable bool _acquired;$/;"	m	class:tbutil::LockT
 _acquired	tbsys/src/tblockguard.h	/^        mutable bool _acquired;$/;"	m	class:tbsys::CLockGuard
-_address	tbnet/src/socket.h	/^    struct sockaddr_in  _address; \/\/ µØÖ·$/;"	m	class:tbnet::Socket
+_address	tbnet/src/socket.h	/^    struct sockaddr_in  _address; \/\/ µØÖ·$/;"	m	class:tbnet::Socket	typeref:struct:tbnet::Socket::sockaddr_in
 _args	tbnet/src/channel.h	/^    void *_args;    \/\/ »Ø´«²ÎÊý$/;"	m	class:tbnet::Channel
 _args	tbnet/src/packetqueuethread.h	/^    void *_args;$/;"	m	class:tbnet::PacketQueueThread
 _args	tbsys/src/filequeuethread.h	/^            void *_args;$/;"	m	class:tbsys::CFileQueueThread
@@ -1237,7 +1193,7 @@ _backLog	tbnet/src/serversocket.h	/^    int _backLog; \/\/ backlog$/;"	m	class:t
 _batchPushPacket	tbnet/src/iserveradapter.h	/^    bool _batchPushPacket;          \/\/ ÅúÁ¿post packet$/;"	m	class:tbnet::IServerAdapter
 _body	tbnet/src/httpresponsepacket.h	/^    char *_body;                    \/\/ ·µ»ØµÄÄÚÈÝ$/;"	m	class:tbnet::HttpResponsePacket
 _bodyLen	tbnet/src/httpresponsepacket.h	/^    int _bodyLen;                   \/\/ ·µ»ØÄÚÈÝÕÒ³¤¶È$/;"	m	class:tbnet::HttpResponsePacket
-_callback	tbsys/src/CtrlCHandler.cpp	/^static CtrlCHandlerCallback _callback = 0;$/;"	v	file:
+_callback	tbsys/src/CtrlCHandler.cpp	/^static CtrlCHandlerCallback _callback = 0;$/;"	m	namespace:tbutil	file:
 _changeDir	tbsys/src/Service.h	/^    bool _changeDir;$/;"	m	class:tbutil::Service
 _channel	tbnet/src/packet.h	/^    Channel *_channel;$/;"	m	class:tbnet::Packet
 _channelPool	tbnet/src/connection.h	/^    ChannelPool _channelPool;               \/\/ channel pool$/;"	m	class:tbnet::Connection
@@ -1256,7 +1212,7 @@ _cond	tbnet/src/packetqueuethread.h	/^    tbsys::CThreadCond _cond;$/;"	m	class:
 _cond	tbsys/src/Cond.h	/^    mutable pthread_cond_t _cond;$/;"	m	class:tbutil::Cond
 _cond	tbsys/src/Monitor.h	/^    mutable Cond _cond;$/;"	m	class:tbutil::Monitor
 _cond	tbsys/src/threadcond.h	/^    pthread_cond_t _cond;$/;"	m	class:tbsys::CThreadCond
-_config	tbsys/src/config.cpp	/^    static CConfig _config;$/;"	v	file:
+_config	tbsys/src/config.cpp	/^    static CConfig _config;$/;"	m	namespace:tbsys	file:
 _configFile	tbsys/src/Service.h	/^    std::string _configFile;$/;"	m	class:tbutil::Service
 _connectMap	tbnet/src/connectionmanager.h	/^    TBNET_CONN_MAP _connectMap;$/;"	m	class:tbnet::ConnectionManager
 _connection	tbnet/src/httprequestpacket.h	/^    tbnet::Connection *_connection; \/\/ ´æconnection$/;"	m	class:tbnet::HttpRequestPacket
@@ -1265,7 +1221,7 @@ _connections	tbnet/src/udpcomponent.h	/^    __gnu_cxx::hash_map<int, UDPConnecti
 _count	tbnet/test/echoclient.cpp	/^    atomic_t _count;$/;"	m	class:ClientEchoPacketHandler	file:
 _count	tbsys/src/RecMutex.h	/^    mutable int _count;$/;"	m	class:tbutil::RecMutex
 _count	tbsys/test/testTimer.cpp	/^    int _count;$/;"	m	class:TestTask	file:
-_ctrlCHandler	tbsys/src/Service.cpp	/^static tbutil::CtrlCHandler* _ctrlCHandler=NULL;$/;"	v	file:
+_ctrlCHandler	tbsys/src/Service.cpp	/^static tbutil::CtrlCHandler* _ctrlCHandler=NULL;$/;"	m	namespace:tbutil	file:
 _dataLen	tbnet/src/packet.h	/^    int _dataLen;           \/\/ Êý¾Ý°übody³¤¶È(³ýÍ·ÐÅÏ¢Íâ)$/;"	m	class:tbnet::PacketHeader
 _dataReadCnt	tbnet/src/stats.h	/^    uint64_t _dataReadCnt;    \/\/ # bytes read$/;"	m	class:tbnet::StatCounter
 _dataWriteCnt	tbnet/src/stats.h	/^    uint64_t _dataWriteCnt;   \/\/ # bytes written$/;"	m	class:tbnet::StatCounter
@@ -1310,7 +1266,7 @@ _guard	tbsys/src/tbrwlock.h	/^        CLockGuard<CRLock> _guard;$/;"	m	class:tbs
 _guard	tbsys/src/tbrwlock.h	/^        CLockGuard<CWLock> _guard;$/;"	m	class:tbsys::CWLockGuard
 _handler	tbnet/src/channel.h	/^    IPacketHandler *_handler;$/;"	m	class:tbnet::Channel
 _handler	tbnet/src/packetqueuethread.h	/^    IPacketQueueHandler *_handler;$/;"	m	class:tbnet::PacketQueueThread
-_handler	tbsys/src/CtrlCHandler.cpp	/^static const CtrlCHandler* _handler = 0;$/;"	v	file:
+_handler	tbsys/src/CtrlCHandler.cpp	/^static const CtrlCHandler* _handler = 0;$/;"	m	namespace:tbutil	file:
 _handler	tbsys/src/filequeuethread.h	/^            IQueueHandler *_handler;$/;"	m	class:tbsys::CFileQueueThread
 _handler	tbsys/src/queuethread.h	/^            IQueueHandler *_handler;$/;"	m	class:tbsys::CQueueThread
 _head	tbnet/src/packetqueue.h	/^    Packet *_head;  \/\/ Á´Í·$/;"	m	class:tbnet::PacketQueue
@@ -1515,7 +1471,7 @@ _throw	tbsys/src/ThreadException.cpp	/^void ThreadLockedException::_throw() cons
 _throw	tbsys/src/ThreadException.cpp	/^void ThreadNotStartedException::_throw() const$/;"	f	class:tbutil::ThreadNotStartedException
 _throw	tbsys/src/ThreadException.cpp	/^void ThreadStartedException::_throw() const$/;"	f	class:tbutil::ThreadStartedException
 _throw	tbsys/src/ThreadException.cpp	/^void ThreadSyscallException::_throw() const$/;"	f	class:tbutil::ThreadSyscallException
-_tid	tbsys/src/CtrlCHandler.cpp	/^static pthread_t _tid;$/;"	v	file:
+_tid	tbsys/src/CtrlCHandler.cpp	/^static pthread_t _tid;$/;"	m	namespace:tbutil	file:
 _timeout	tbsys/src/ThreadException.h	/^    Time _timeout;$/;"	m	class:tbutil::InvalidTimeoutException
 _timeoutCount	tbnet/test/echoclient.cpp	/^    int _timeoutCount;$/;"	m	class:ClientEchoPacketHandler	file:
 _timeoutThread	tbnet/src/transport.h	/^    tbsys::CThread _timeoutThread;      \/\/ ³¬Ê±¼ì²éÏß³Ì$/;"	m	class:tbnet::Transport
@@ -1637,8 +1593,6 @@ addComponent	tbnet/src/transport.cpp	/^void Transport::addComponent(IOComponent 
 addEvent	tbnet/src/epollsocketevent.cpp	/^bool EPollSocketEvent::addEvent(Socket *socket, bool enableRead, bool enableWrite) {$/;"	f	class:tbnet::EPollSocketEvent
 addRef	tbnet/src/iocomponent.h	/^    int addRef() {$/;"	f	class:tbnet::IOComponent
 addrToString	tbsys/src/tbnetutil.cpp	/^string CNetUtil::addrToString(uint64_t ipport)$/;"	f	class:tbsys::CNetUtil
-aix_post_process_depfile	tbnet/depcomp	/^aix_post_process_depfile ()$/;"	f
-aix_post_process_depfile	tbsys/depcomp	/^aix_post_process_depfile ()$/;"	f
 allocChannel	tbnet/src/channelpool.cpp	/^Channel *ChannelPool::allocChannel() {$/;"	f	class:tbnet::ChannelPool
 allocate	tbsys/src/bytebuffer.cpp	/^char* ByteBuffer::allocate(uint32_t size) const$/;"	f	class:ByteBuffer
 am__CONFIG_DISTCLEAN_FILES	tbnet/Makefile	/^am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \\$/;"	m
@@ -1673,8 +1627,6 @@ am__configure_deps	tbnet/test/Makefile	/^am__configure_deps = $(am__aclocal_m4_d
 am__configure_deps	tbsys/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
 am__configure_deps	tbsys/src/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
 am__configure_deps	tbsys/test/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
-am__cwd	tbnet/Makefile	/^	  && am__cwd=`pwd` \\$/;"	m
-am__cwd	tbsys/Makefile	/^	  && am__cwd=`pwd` \\$/;"	m
 am__define_uniq_tagged_files	tbnet/Makefile	/^am__define_uniq_tagged_files = \\$/;"	m
 am__define_uniq_tagged_files	tbnet/src/Makefile	/^am__define_uniq_tagged_files = \\$/;"	m
 am__define_uniq_tagged_files	tbnet/src/test/Makefile	/^am__define_uniq_tagged_files = \\$/;"	m
@@ -1749,9 +1701,7 @@ am__nobase_strip_setup	tbsys/src/Makefile	/^am__nobase_strip_setup = \\$/;"	m
 am__objects_1	tbnet/src/Makefile	/^am__objects_1 = channel.lo channelpool.lo connection.lo \\$/;"	m
 am__objects_1	tbnet/src/test/Makefile	/^am__objects_1 = sockettf.$(OBJEXT) packetqueuetf.$(OBJEXT)$/;"	m
 am__objects_1	tbsys/src/Makefile	/^am__objects_1 = config.lo defaultrunnable.lo filequeue.lo \\$/;"	m
-am__post_remove_distdir	tbnet/Makefile	/^	$(MAKE) $(AM_MAKEFLAGS) $(DIST_TARGETS) am__post_remove_distdir='@:'$/;"	m
 am__post_remove_distdir	tbnet/Makefile	/^am__post_remove_distdir = $(am__remove_distdir)$/;"	m
-am__post_remove_distdir	tbsys/Makefile	/^	$(MAKE) $(AM_MAKEFLAGS) $(DIST_TARGETS) am__post_remove_distdir='@:'$/;"	m
 am__post_remove_distdir	tbsys/Makefile	/^am__post_remove_distdir = $(am__remove_distdir)$/;"	m
 am__quote	tbnet/Makefile	/^am__quote = $/;"	m
 am__quote	tbnet/src/Makefile	/^am__quote = $/;"	m
@@ -1764,20 +1714,8 @@ am__recursive_targets	tbnet/Makefile	/^am__recursive_targets = \\$/;"	m
 am__recursive_targets	tbsys/Makefile	/^am__recursive_targets = \\$/;"	m
 am__relativize	tbnet/Makefile	/^am__relativize = \\$/;"	m
 am__relativize	tbsys/Makefile	/^am__relativize = \\$/;"	m
-am__remove_distdir	tbnet/Makefile	/^		am__remove_distdir=: \\$/;"	m
-am__remove_distdir	tbnet/Makefile	/^	    echo "     am__remove_distdir=: am__skip_length_check=: am__skip_mode_fix=: distdir)"; \\$/;"	m
 am__remove_distdir	tbnet/Makefile	/^am__remove_distdir = \\$/;"	m
-am__remove_distdir	tbsys/Makefile	/^		am__remove_distdir=: \\$/;"	m
-am__remove_distdir	tbsys/Makefile	/^	    echo "     am__remove_distdir=: am__skip_length_check=: am__skip_mode_fix=: distdir)"; \\$/;"	m
 am__remove_distdir	tbsys/Makefile	/^am__remove_distdir = \\$/;"	m
-am__skip_length_check	tbnet/Makefile	/^		am__skip_length_check=: \\$/;"	m
-am__skip_length_check	tbnet/Makefile	/^	    echo "     am__remove_distdir=: am__skip_length_check=: am__skip_mode_fix=: distdir)"; \\$/;"	m
-am__skip_length_check	tbsys/Makefile	/^		am__skip_length_check=: \\$/;"	m
-am__skip_length_check	tbsys/Makefile	/^	    echo "     am__remove_distdir=: am__skip_length_check=: am__skip_mode_fix=: distdir)"; \\$/;"	m
-am__skip_mode_fix	tbnet/Makefile	/^		am__skip_mode_fix=: \\$/;"	m
-am__skip_mode_fix	tbnet/Makefile	/^	    echo "     am__remove_distdir=: am__skip_length_check=: am__skip_mode_fix=: distdir)"; \\$/;"	m
-am__skip_mode_fix	tbsys/Makefile	/^		am__skip_mode_fix=: \\$/;"	m
-am__skip_mode_fix	tbsys/Makefile	/^	    echo "     am__remove_distdir=: am__skip_length_check=: am__skip_mode_fix=: distdir)"; \\$/;"	m
 am__strip_dir	tbnet/src/Makefile	/^am__strip_dir = f=`echo $$p | sed -e 's|^.*\/||'`;$/;"	m
 am__strip_dir	tbsys/src/Makefile	/^am__strip_dir = f=`echo $$p | sed -e 's|^.*\/||'`;$/;"	m
 am__tagged_files	tbnet/Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)$/;"	m
@@ -2007,7 +1945,7 @@ atomic_set_mask	tbsys/src/atomic.h	240;"	d
 atomic_sub	tbsys/src/atomic.h	/^static __inline__ void atomic_sub(int i, atomic_t *v)$/;"	f
 atomic_sub_and_test	tbsys/src/atomic.h	/^static __inline__ int atomic_sub_and_test(int i, atomic_t *v)$/;"	f
 atomic_sub_return	tbsys/src/atomic.h	/^static __inline__ int atomic_sub_return(int i, atomic_t *v)$/;"	f
-atomic_t	tbsys/src/atomic.h	/^typedef struct { volatile int counter; } atomic_t;$/;"	t
+atomic_t	tbsys/src/atomic.h	/^typedef struct { volatile int counter; } atomic_t;$/;"	t	typeref:struct:__anon1
 backup	tbsys/src/filequeue.cpp	/^    void CFileQueue::backup(uint32_t index) {$/;"	f	class:tbsys::CFileQueue
 begin	tbsys/src/profiler.cpp	/^	void Profiler::begin(const string& description) {$/;"	f	class:tbsys::util::Profiler
 bindir	tbnet/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
@@ -2019,13 +1957,6 @@ bindir	tbsys/src/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
 bindir	tbsys/test/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
 broadcast	tbsys/src/Cond.cpp	/^void Cond::broadcast()$/;"	f	class:tbutil::Cond
 broadcast	tbsys/src/threadcond.h	/^    void broadcast() {$/;"	f	class:tbsys::CThreadCond
-bs	tbnet/Makefile	/^        bs=\\\\; \\$/;"	m
-bs	tbnet/src/Makefile	/^        bs=\\\\; \\$/;"	m
-bs	tbnet/src/test/Makefile	/^        bs=\\\\; \\$/;"	m
-bs	tbnet/test/Makefile	/^        bs=\\\\; \\$/;"	m
-bs	tbsys/Makefile	/^        bs=\\\\; \\$/;"	m
-bs	tbsys/src/Makefile	/^        bs=\\\\; \\$/;"	m
-bs	tbsys/test/Makefile	/^        bs=\\\\; \\$/;"	m
 btime	tbsys/src/profiler.h	/^	uint64_t btime;$/;"	m	class:tbsys::util::Entry
 build	tbnet/Makefile	/^build = x86_64-unknown-linux-gnu$/;"	m
 build	tbnet/src/Makefile	/^build = x86_64-unknown-linux-gnu$/;"	m
@@ -2120,19 +2051,19 @@ connect	tbnet/src/transport.cpp	/^Connection *Transport::connect(const char *spe
 copy	tbsys/src/bytebuffer.cpp	/^ByteBuffer & ByteBuffer::copy(const char* data, uint32_t offset, uint32_t size)$/;"	f	class:ByteBuffer
 count	tbsys/src/RecMutex.h	/^        int count;$/;"	m	struct:tbutil::RecMutex::LockState
 countDataLen	tbnet/src/controlpacket.h	/^    void countDataLen() {}$/;"	f	class:tbnet::ControlPacket
-counter	tbsys/src/atomic.h	/^typedef struct { volatile int counter; } atomic_t;$/;"	m
+counter	tbsys/src/atomic.h	/^typedef struct { volatile int counter; } atomic_t;$/;"	m	struct:__anon1
 createPacket	tbnet/src/httppacketstreamer.h	/^    Packet *createPacket(int pcode) {$/;"	f	class:tbnet::DefaultHttpPacketFactory
 createPacket	tbnet/test/echoclient.cpp	/^    Packet *createPacket(int pcode)$/;"	f	class:ClientEchoPacketFactory
 createPacket	tbnet/test/echoserver.cpp	/^    Packet *createPacket(int pcode)$/;"	f	class:EchoPacketFactory
 createPipe	tbsys/src/Network.cpp	/^int createPipe(SOCKET fds[2])$/;"	f	namespace:tbutilInternal
 createUDP	tbnet/src/socket.cpp	/^bool Socket::createUDP() {$/;"	f	class:tbnet::Socket
-ctrlCHandlerCallback	tbsys/src/Service.cpp	/^static void ctrlCHandlerCallback( int sig )$/;"	f	namespace:tbutil	file:
-ctrlCHandlerName	tbsys/src/CtrlCHandler.cpp	/^static const char* ctrlCHandlerName = "tbutil::CtrlCHandlerException";$/;"	v	file:
+ctrlCHandlerCallback	tbsys/src/Service.cpp	/^static void ctrlCHandlerCallback( int sig )$/;"	f	namespace:tbutil
+ctrlCHandlerName	tbsys/src/CtrlCHandler.cpp	/^static const char* ctrlCHandlerName = "tbutil::CtrlCHandlerException";$/;"	m	namespace:tbutil	file:
 data	tbsys/src/filequeue.h	/^        char data[0];$/;"	m	struct:tbsys::queue_item
 data	tbsys/src/queuethread.h	/^                char *data;$/;"	m	struct:tbsys::CQueueThread::data_pair
 data_	tbsys/src/bytebuffer.h	/^            char* data_;$/;"	m	class:tbutil::ByteBuffer
 data_pair	tbsys/src/queuethread.h	/^            typedef struct data_pair {$/;"	s	class:tbsys::CQueueThread
-data_pair	tbsys/src/queuethread.h	/^            } data_pair;$/;"	t	class:tbsys::CQueueThread
+data_pair	tbsys/src/queuethread.h	/^            } data_pair;$/;"	t	class:tbsys::CQueueThread	typeref:struct:tbsys::CQueueThread::data_pair
 datadir	tbnet/Makefile	/^datadir = ${datarootdir}$/;"	m
 datadir	tbnet/src/Makefile	/^datadir = ${datarootdir}$/;"	m
 datadir	tbnet/src/test/Makefile	/^datadir = ${datarootdir}$/;"	m
@@ -2147,10 +2078,6 @@ datarootdir	tbnet/test/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
 datarootdir	tbsys/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
 datarootdir	tbsys/src/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
 datarootdir	tbsys/test/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
-dc_destdir	tbnet/Makefile	/^	  && dc_destdir="$${TMPDIR-\/tmp}\/am-dc-$$$$\/" \\$/;"	m
-dc_destdir	tbsys/Makefile	/^	  && dc_destdir="$${TMPDIR-\/tmp}\/am-dc-$$$$\/" \\$/;"	m
-dc_install_base	tbnet/Makefile	/^	dc_install_base=`$(am__cd) $(distdir)\/_inst && pwd | sed -e 's,^[^:\\\\\/]:[\\\\\/],\/,'` \\$/;"	m
-dc_install_base	tbsys/Makefile	/^	dc_install_base=`$(am__cd) $(distdir)\/_inst && pwd | sed -e 's,^[^:\\\\\/]:[\\\\\/],\/,'` \\$/;"	m
 decode	tbnet/src/controlpacket.h	/^    bool decode(DataBuffer *input, PacketHeader *header) {$/;"	f	class:tbnet::ControlPacket
 decode	tbnet/src/defaultpacketstreamer.cpp	/^Packet *DefaultPacketStreamer::decode(DataBuffer *input, PacketHeader *header) {$/;"	f	class:tbnet::DefaultPacketStreamer
 decode	tbnet/src/httprequestpacket.cpp	/^bool HttpRequestPacket::decode(DataBuffer *input, PacketHeader *header) {$/;"	f	class:tbnet::HttpRequestPacket
@@ -2164,20 +2091,6 @@ depcomp	tbnet/src/test/Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	
 depcomp	tbnet/test/Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
 depcomp	tbsys/src/Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
 depcomp	tbsys/test/Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
-depmode	tbnet/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
-depmode	tbnet/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
-depmode	tbnet/src/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
-depmode	tbnet/src/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
-depmode	tbnet/src/test/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
-depmode	tbnet/src/test/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
-depmode	tbnet/test/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
-depmode	tbnet/test/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
-depmode	tbsys/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
-depmode	tbsys/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
-depmode	tbsys/src/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
-depmode	tbsys/src/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
-depmode	tbsys/test/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
-depmode	tbsys/test/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
 destroy	tbnet/src/databuffer.h	/^    void destroy() {$/;"	f	class:tbnet::DataBuffer
 destroy	tbnet/src/transport.cpp	/^void Transport::destroy() {$/;"	f	class:tbnet::Transport
 destroy	tbsys/src/ThreadPool.cpp	/^void ThreadPool::destroy()$/;"	f	class:tbutil::ThreadPool
@@ -2185,60 +2098,14 @@ destroy	tbsys/src/Timer.cpp	/^void Timer::destroy()$/;"	f	class:tbutil::Timer
 destroy	tbsys/test/testService.cpp	/^    virtual bool destroy()$/;"	f	class:testService
 destroy	tbsys/test/testThreadPool.cpp	/^    virtual void destroy( )$/;"	f	class:TestWorkItems
 detach	tbsys/src/TbThread.cpp	/^int Thread::detach()$/;"	f	class:tbutil::Thread
-dir	tbnet/Makefile	/^	    dir=`echo "\/$$file" | sed -e 's,\/[^\/]*$$,,'`; \\$/;"	m
-dir	tbnet/src/Makefile	/^	    dir=`echo "\/$$file" | sed -e 's,\/[^\/]*$$,,'`; \\$/;"	m
-dir	tbnet/src/Makefile	/^	dir='$(DESTDIR)$(includedir)'; $(am__uninstall_files_from_dir)$/;"	m
-dir	tbnet/src/test/Makefile	/^	    dir=`echo "\/$$file" | sed -e 's,\/[^\/]*$$,,'`; \\$/;"	m
-dir	tbnet/test/Makefile	/^	    dir=`echo "\/$$file" | sed -e 's,\/[^\/]*$$,,'`; \\$/;"	m
-dir	tbsys/Makefile	/^	    dir=`echo "\/$$file" | sed -e 's,\/[^\/]*$$,,'`; \\$/;"	m
-dir	tbsys/src/Makefile	/^	    dir=`echo "\/$$file" | sed -e 's,\/[^\/]*$$,,'`; \\$/;"	m
-dir	tbsys/src/Makefile	/^	dir='$(DESTDIR)$(includedir)'; $(am__uninstall_files_from_dir)$/;"	m
-dir	tbsys/test/Makefile	/^	    dir=`echo "\/$$file" | sed -e 's,\/[^\/]*$$,,'`; \\$/;"	m
-dir0	tbnet/Makefile	/^        dir0="$$dir0"\/"$$first"; \\$/;"	m
-dir0	tbnet/Makefile	/^        dir0=`echo "$$dir0" | sed -e "$$sed_butlast"`; \\$/;"	m
-dir0	tbnet/Makefile	/^  dir0=`pwd`; \\$/;"	m
-dir0	tbsys/Makefile	/^        dir0="$$dir0"\/"$$first"; \\$/;"	m
-dir0	tbsys/Makefile	/^        dir0=`echo "$$dir0" | sed -e "$$sed_butlast"`; \\$/;"	m
-dir0	tbsys/Makefile	/^  dir0=`pwd`; \\$/;"	m
-dir1	tbnet/Makefile	/^	    dir1=$$subdir; dir2="$(distdir)\/$$subdir"; \\$/;"	m
-dir1	tbnet/Makefile	/^	    dir1=$$subdir; dir2="$(top_distdir)"; \\$/;"	m
-dir1	tbnet/Makefile	/^    dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \\$/;"	m
-dir1	tbsys/Makefile	/^	    dir1=$$subdir; dir2="$(distdir)\/$$subdir"; \\$/;"	m
-dir1	tbsys/Makefile	/^	    dir1=$$subdir; dir2="$(top_distdir)"; \\$/;"	m
-dir1	tbsys/Makefile	/^    dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \\$/;"	m
-dir2	tbnet/Makefile	/^	    dir1=$$subdir; dir2="$(distdir)\/$$subdir"; \\$/;"	m
-dir2	tbnet/Makefile	/^	    dir1=$$subdir; dir2="$(top_distdir)"; \\$/;"	m
-dir2	tbnet/Makefile	/^          dir2="..\/$$dir2"; \\$/;"	m
-dir2	tbnet/Makefile	/^          dir2=`echo "$$dir2" | sed -e "$$sed_rest"`; \\$/;"	m
-dir2	tbnet/Makefile	/^        dir2=`echo "$$dir0" | sed -e "$$sed_last"`\/"$$dir2"; \\$/;"	m
-dir2	tbsys/Makefile	/^	    dir1=$$subdir; dir2="$(distdir)\/$$subdir"; \\$/;"	m
-dir2	tbsys/Makefile	/^	    dir1=$$subdir; dir2="$(top_distdir)"; \\$/;"	m
-dir2	tbsys/Makefile	/^          dir2="..\/$$dir2"; \\$/;"	m
-dir2	tbsys/Makefile	/^          dir2=`echo "$$dir2" | sed -e "$$sed_rest"`; \\$/;"	m
-dir2	tbsys/Makefile	/^        dir2=`echo "$$dir0" | sed -e "$$sed_last"`\/"$$dir2"; \\$/;"	m
 disableInterrupt	tbsys/src/Service.cpp	/^void Service::disableInterrupt()$/;"	f	class:tbutil::Service
 disconnect	tbnet/src/connection.cpp	/^void Connection::disconnect() {$/;"	f	class:tbnet::Connection
 disconnect	tbnet/src/connectionmanager.cpp	/^void ConnectionManager::disconnect(uint64_t serverId) {$/;"	f	class:tbnet::ConnectionManager
 disconnect	tbnet/src/transport.cpp	/^bool Transport::disconnect(Connection *conn) $/;"	f	class:tbnet::Transport
-dist_files	tbnet/Makefile	/^	  dist_files=`for file in $$list; do echo $$file; done | \\$/;"	m
-dist_files	tbnet/src/Makefile	/^	  dist_files=`for file in $$list; do echo $$file; done | \\$/;"	m
-dist_files	tbnet/src/test/Makefile	/^	  dist_files=`for file in $$list; do echo $$file; done | \\$/;"	m
-dist_files	tbnet/test/Makefile	/^	  dist_files=`for file in $$list; do echo $$file; done | \\$/;"	m
-dist_files	tbsys/Makefile	/^	  dist_files=`for file in $$list; do echo $$file; done | \\$/;"	m
-dist_files	tbsys/src/Makefile	/^	  dist_files=`for file in $$list; do echo $$file; done | \\$/;"	m
-dist_files	tbsys/test/Makefile	/^	  dist_files=`for file in $$list; do echo $$file; done | \\$/;"	m
 distcleancheck_listfiles	tbnet/Makefile	/^distcleancheck_listfiles = find . -type f -print$/;"	m
 distcleancheck_listfiles	tbsys/Makefile	/^distcleancheck_listfiles = find . -type f -print$/;"	m
-distdir	tbnet/Makefile	/^	        distdir="$$new_distdir" \\$/;"	m
-distdir	tbnet/Makefile	/^	    echo " (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) top_distdir="$$new_top_distdir" distdir="$$new_distdir" \\\\"; \\$/;"	m
 distdir	tbnet/Makefile	/^distdir = $(PACKAGE)-$(VERSION)$/;"	m
-distdir	tbsys/Makefile	/^	        distdir="$$new_distdir" \\$/;"	m
-distdir	tbsys/Makefile	/^	    echo " (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) top_distdir="$$new_top_distdir" distdir="$$new_distdir" \\\\"; \\$/;"	m
 distdir	tbsys/Makefile	/^distdir = $(PACKAGE)-$(VERSION)$/;"	m
-distuninstallcheck_dir	tbnet/Makefile	/^	            distuninstallcheck_dir="$$dc_destdir" distuninstallcheck; \\$/;"	m
-distuninstallcheck_dir	tbnet/Makefile	/^	  && $(MAKE) $(AM_MAKEFLAGS) distuninstallcheck_dir="$$dc_install_base" \\$/;"	m
-distuninstallcheck_dir	tbsys/Makefile	/^	            distuninstallcheck_dir="$$dc_destdir" distuninstallcheck; \\$/;"	m
-distuninstallcheck_dir	tbsys/Makefile	/^	  && $(MAKE) $(AM_MAKEFLAGS) distuninstallcheck_dir="$$dc_install_base" \\$/;"	m
 distuninstallcheck_listfiles	tbnet/Makefile	/^distuninstallcheck_listfiles = find . -type f -print$/;"	m
 distuninstallcheck_listfiles	tbsys/Makefile	/^distuninstallcheck_listfiles = find . -type f -print$/;"	m
 doSubEntry	tbsys/src/profiler.h	/^	void doSubEntry(const std::string& message) {$/;"	f	class:tbsys::util::Entry
@@ -2249,10 +2116,6 @@ docdir	tbnet/test/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE}$/;"	m
 docdir	tbsys/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE}$/;"	m
 docdir	tbsys/src/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE}$/;"	m
 docdir	tbsys/test/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE}$/;"	m
-dot_seen	tbnet/Makefile	/^	    dot_seen=yes; \\$/;"	m
-dot_seen	tbnet/Makefile	/^	dot_seen=no; \\$/;"	m
-dot_seen	tbsys/Makefile	/^	    dot_seen=yes; \\$/;"	m
-dot_seen	tbsys/Makefile	/^	dot_seen=no; \\$/;"	m
 dotest_DEPENDENCIES	tbnet/src/test/Makefile	/^dotest_DEPENDENCIES = $(top_srcdir)\/src\/.libs\/libanet.a$/;"	m
 dotest_LDADD	tbnet/src/test/Makefile	/^dotest_LDADD = $(LDADD)$/;"	m
 dotest_OBJECTS	tbnet/src/test/Makefile	/^dotest_OBJECTS = $(am_dotest_OBJECTS)$/;"	m
@@ -2279,10 +2142,6 @@ echoserver_SOURCES	tbnet/test/Makefile	/^echoserver_SOURCES = echoserver.cpp$/;"
 element_type	tbsys/src/Handle.h	/^    typedef T element_type;$/;"	t	class:tbutil::HandleBase
 empty	tbnet/src/packetqueue.cpp	/^bool PacketQueue::empty() {$/;"	f	class:tbnet::PacketQueue
 empty	tbsys/src/linklist.h	/^        bool empty() const { return !(_head && _tail); }$/;"	f	class:tbsys::LinkList
-empty_fix	tbnet/Makefile	/^	  empty_fix=.; \\$/;"	m
-empty_fix	tbnet/Makefile	/^	  empty_fix=; \\$/;"	m
-empty_fix	tbsys/Makefile	/^	  empty_fix=.; \\$/;"	m
-empty_fix	tbsys/Makefile	/^	  empty_fix=; \\$/;"	m
 enableInterrupt	tbsys/src/Service.cpp	/^void Service::enableInterrupt()$/;"	f	class:tbutil::Service
 enableWrite	tbnet/src/iocomponent.h	/^    void enableWrite(bool writeOn) {$/;"	f	class:tbnet::IOComponent
 encode	tbnet/src/controlpacket.h	/^    bool encode(DataBuffer *output) {$/;"	f	class:tbnet::ControlPacket
@@ -2313,19 +2172,7 @@ existPacketHeader	tbnet/src/ipacketstreamer.h	/^    bool existPacketHeader() {$/
 existPid	tbsys/src/process.cpp	/^    int CProcess::existPid(const char *szPidFile)$/;"	f	class:tbsys::CProcess
 exit_status	tbsys/src/filequeue.h	/^        int exit_status;        \/\/ ÍË³ö×´Ì¬$/;"	m	struct:tbsys::qinfo_head
 expand	tbnet/src/databuffer.h	/^    inline void expand(int need) {$/;"	f	class:tbnet::DataBuffer
-f	tbnet/src/Makefile	/^    $(srcdir)\/*) f=`echo "$$p" | sed "s|^$$srcdirstrip\/||"`;; \\$/;"	m
-f	tbnet/src/Makefile	/^    *) f=$$p;; \\$/;"	m
-f	tbnet/src/Makefile	/^am__strip_dir = f=`echo $$p | sed -e 's|^.*\/||'`;$/;"	m
-f	tbsys/src/Makefile	/^    $(srcdir)\/*) f=`echo "$$p" | sed "s|^$$srcdirstrip\/||"`;; \\$/;"	m
-f	tbsys/src/Makefile	/^    *) f=$$p;; \\$/;"	m
-f	tbsys/src/Makefile	/^am__strip_dir = f=`echo $$p | sed -e 's|^.*\/||'`;$/;"	m
-failcom	tbnet/Makefile	/^	  failcom='exit 1'; \\$/;"	m
-failcom	tbnet/Makefile	/^	  failcom='fail=yes'; \\$/;"	m
-failcom	tbsys/Makefile	/^	  failcom='exit 1'; \\$/;"	m
-failcom	tbsys/Makefile	/^	  failcom='fail=yes'; \\$/;"	m
 file	tbsys/src/Exception.cpp	/^const char* Exception::file() const$/;"	f	class:tbutil::Exception
-files	tbnet/src/Makefile	/^	files=`for p in $$list; do echo $$p; done | sed -e 's|^.*\/||'`; \\$/;"	m
-files	tbsys/src/Makefile	/^	files=`for p in $$list; do echo $$p; done | sed -e 's|^.*\/||'`; \\$/;"	m
 fillInt16	tbnet/src/databuffer.h	/^    void fillInt16(unsigned char *dst, uint16_t n) {$/;"	f	class:tbnet::DataBuffer
 fillInt32	tbnet/src/databuffer.h	/^    void fillInt32(unsigned char *dst, uint32_t n) {$/;"	f	class:tbnet::DataBuffer
 fillInt64	tbnet/src/databuffer.h	/^    void fillInt64(unsigned char *dst, uint64_t n) {$/;"	f	class:tbnet::DataBuffer
@@ -2333,19 +2180,8 @@ fillInt8	tbnet/src/databuffer.h	/^    void fillInt8(unsigned char *dst, uint8_t 
 findBytes	tbnet/src/databuffer.h	/^    int findBytes(const char *findstr, int len) {$/;"	f	class:tbnet::DataBuffer
 findHeader	tbnet/src/httprequestpacket.cpp	/^const char *HttpRequestPacket::findHeader(const char *name) {$/;"	f	class:tbnet::HttpRequestPacket
 finish	tbsys/src/filequeue.cpp	/^    void CFileQueue::finish(uint32_t index) {$/;"	f	class:tbsys::CFileQueue
-first	tbnet/Makefile	/^    first=`echo "$$dir1" | sed -e "$$sed_first"`; \\$/;"	m
-first	tbsys/Makefile	/^    first=`echo "$$dir1" | sed -e "$$sed_first"`; \\$/;"	m
 first	tbsys/src/profiler.h	/^	Entry *first;$/;"	m	class:tbsys::util::Entry
-first2	tbnet/Makefile	/^        first2=`echo "$$dir2" | sed -e "$$sed_first"`; \\$/;"	m
-first2	tbsys/Makefile	/^        first2=`echo "$$dir2" | sed -e "$$sed_first"`; \\$/;"	m
 flag	tbsys/src/filequeue.h	/^        int flag;$/;"	m	struct:tbsys::queue_item
-flg	tbnet/Makefile	/^    flg=`printf '%s\\n' "$$flg" | sed "s\/$$1.*$$\/\/"`; \\$/;"	m
-flg	tbnet/src/Makefile	/^    flg=`printf '%s\\n' "$$flg" | sed "s\/$$1.*$$\/\/"`; \\$/;"	m
-flg	tbnet/src/test/Makefile	/^    flg=`printf '%s\\n' "$$flg" | sed "s\/$$1.*$$\/\/"`; \\$/;"	m
-flg	tbnet/test/Makefile	/^    flg=`printf '%s\\n' "$$flg" | sed "s\/$$1.*$$\/\/"`; \\$/;"	m
-flg	tbsys/Makefile	/^    flg=`printf '%s\\n' "$$flg" | sed "s\/$$1.*$$\/\/"`; \\$/;"	m
-flg	tbsys/src/Makefile	/^    flg=`printf '%s\\n' "$$flg" | sed "s\/$$1.*$$\/\/"`; \\$/;"	m
-flg	tbsys/test/Makefile	/^    flg=`printf '%s\\n' "$$flg" | sed "s\/$$1.*$$\/\/"`; \\$/;"	m
 formatByteSize	tbsys/src/stringutil.cpp	/^    std::string CStringUtil::formatByteSize(double bytes)$/;"	f	class:tbsys::CStringUtil
 free	tbnet/src/controlpacket.h	/^    void free() {}$/;"	f	class:tbnet::ControlPacket
 free	tbnet/src/packet.h	/^    virtual void free() {$/;"	f	class:tbnet::Packet
@@ -2355,449 +2191,255 @@ freeChannel	tbnet/src/channelpool.cpp	/^bool ChannelPool::freeChannel(Channel *c
 func_append	tbnet/config.status	/^func_append ()\\$/;"	f
 func_append	tbnet/configure	/^func_append ()\\$/;"	f
 func_append	tbnet/libtool	/^func_append ()$/;"	f
-func_append	tbnet/ltmain.sh	/^func_append ()$/;"	f
 func_append	tbsys/config.status	/^func_append ()\\$/;"	f
 func_append	tbsys/configure	/^func_append ()\\$/;"	f
 func_append	tbsys/libtool	/^func_append ()$/;"	f
-func_append	tbsys/ltmain.sh	/^func_append ()$/;"	f
 func_append_quoted	tbnet/config.status	/^func_append_quoted ()\\$/;"	f
 func_append_quoted	tbnet/configure	/^func_append_quoted ()\\$/;"	f
 func_append_quoted	tbnet/libtool	/^func_append_quoted ()$/;"	f
-func_append_quoted	tbnet/ltmain.sh	/^func_append_quoted ()$/;"	f
 func_append_quoted	tbsys/config.status	/^func_append_quoted ()\\$/;"	f
 func_append_quoted	tbsys/configure	/^func_append_quoted ()\\$/;"	f
 func_append_quoted	tbsys/libtool	/^func_append_quoted ()$/;"	f
-func_append_quoted	tbsys/ltmain.sh	/^func_append_quoted ()$/;"	f
 func_arith	tbnet/config.status	/^func_arith ()\\$/;"	f
 func_arith	tbnet/configure	/^func_arith ()\\$/;"	f
 func_arith	tbnet/libtool	/^func_arith ()$/;"	f
-func_arith	tbnet/ltmain.sh	/^func_arith ()$/;"	f
 func_arith	tbsys/config.status	/^func_arith ()\\$/;"	f
 func_arith	tbsys/configure	/^func_arith ()\\$/;"	f
 func_arith	tbsys/libtool	/^func_arith ()$/;"	f
-func_arith	tbsys/ltmain.sh	/^func_arith ()$/;"	f
 func_basename	tbnet/config.status	/^func_basename ()\\$/;"	f
 func_basename	tbnet/configure	/^func_basename ()\\$/;"	f
 func_basename	tbnet/libtool	/^func_basename ()$/;"	f
-func_basename	tbnet/ltmain.sh	/^func_basename ()$/;"	f
 func_basename	tbsys/config.status	/^func_basename ()\\$/;"	f
 func_basename	tbsys/configure	/^func_basename ()\\$/;"	f
 func_basename	tbsys/libtool	/^func_basename ()$/;"	f
-func_basename	tbsys/ltmain.sh	/^func_basename ()$/;"	f
 func_check_version_match	tbnet/libtool	/^func_check_version_match ()$/;"	f
-func_check_version_match	tbnet/ltmain.sh	/^func_check_version_match ()$/;"	f
 func_check_version_match	tbsys/libtool	/^func_check_version_match ()$/;"	f
-func_check_version_match	tbsys/ltmain.sh	/^func_check_version_match ()$/;"	f
 func_config	tbnet/libtool	/^func_config ()$/;"	f
-func_config	tbnet/ltmain.sh	/^func_config ()$/;"	f
 func_config	tbsys/libtool	/^func_config ()$/;"	f
-func_config	tbsys/ltmain.sh	/^func_config ()$/;"	f
 func_convert_core_file_wine_to_w32	tbnet/libtool	/^func_convert_core_file_wine_to_w32 ()$/;"	f
-func_convert_core_file_wine_to_w32	tbnet/ltmain.sh	/^func_convert_core_file_wine_to_w32 ()$/;"	f
 func_convert_core_file_wine_to_w32	tbsys/libtool	/^func_convert_core_file_wine_to_w32 ()$/;"	f
-func_convert_core_file_wine_to_w32	tbsys/ltmain.sh	/^func_convert_core_file_wine_to_w32 ()$/;"	f
 func_convert_core_msys_to_w32	tbnet/libtool	/^func_convert_core_msys_to_w32 ()$/;"	f
-func_convert_core_msys_to_w32	tbnet/ltmain.sh	/^func_convert_core_msys_to_w32 ()$/;"	f
 func_convert_core_msys_to_w32	tbsys/libtool	/^func_convert_core_msys_to_w32 ()$/;"	f
-func_convert_core_msys_to_w32	tbsys/ltmain.sh	/^func_convert_core_msys_to_w32 ()$/;"	f
 func_convert_core_path_wine_to_w32	tbnet/libtool	/^func_convert_core_path_wine_to_w32 ()$/;"	f
-func_convert_core_path_wine_to_w32	tbnet/ltmain.sh	/^func_convert_core_path_wine_to_w32 ()$/;"	f
 func_convert_core_path_wine_to_w32	tbsys/libtool	/^func_convert_core_path_wine_to_w32 ()$/;"	f
-func_convert_core_path_wine_to_w32	tbsys/ltmain.sh	/^func_convert_core_path_wine_to_w32 ()$/;"	f
 func_convert_file_check	tbnet/libtool	/^func_convert_file_check ()$/;"	f
-func_convert_file_check	tbnet/ltmain.sh	/^func_convert_file_check ()$/;"	f
 func_convert_file_check	tbsys/libtool	/^func_convert_file_check ()$/;"	f
-func_convert_file_check	tbsys/ltmain.sh	/^func_convert_file_check ()$/;"	f
 func_convert_file_cygwin_to_w32	tbnet/libtool	/^func_convert_file_cygwin_to_w32 ()$/;"	f
-func_convert_file_cygwin_to_w32	tbnet/ltmain.sh	/^func_convert_file_cygwin_to_w32 ()$/;"	f
 func_convert_file_cygwin_to_w32	tbsys/libtool	/^func_convert_file_cygwin_to_w32 ()$/;"	f
-func_convert_file_cygwin_to_w32	tbsys/ltmain.sh	/^func_convert_file_cygwin_to_w32 ()$/;"	f
 func_convert_file_msys_to_cygwin	tbnet/libtool	/^func_convert_file_msys_to_cygwin ()$/;"	f
-func_convert_file_msys_to_cygwin	tbnet/ltmain.sh	/^func_convert_file_msys_to_cygwin ()$/;"	f
 func_convert_file_msys_to_cygwin	tbsys/libtool	/^func_convert_file_msys_to_cygwin ()$/;"	f
-func_convert_file_msys_to_cygwin	tbsys/ltmain.sh	/^func_convert_file_msys_to_cygwin ()$/;"	f
 func_convert_file_msys_to_w32	tbnet/libtool	/^func_convert_file_msys_to_w32 ()$/;"	f
-func_convert_file_msys_to_w32	tbnet/ltmain.sh	/^func_convert_file_msys_to_w32 ()$/;"	f
 func_convert_file_msys_to_w32	tbsys/libtool	/^func_convert_file_msys_to_w32 ()$/;"	f
-func_convert_file_msys_to_w32	tbsys/ltmain.sh	/^func_convert_file_msys_to_w32 ()$/;"	f
 func_convert_file_nix_to_cygwin	tbnet/libtool	/^func_convert_file_nix_to_cygwin ()$/;"	f
-func_convert_file_nix_to_cygwin	tbnet/ltmain.sh	/^func_convert_file_nix_to_cygwin ()$/;"	f
 func_convert_file_nix_to_cygwin	tbsys/libtool	/^func_convert_file_nix_to_cygwin ()$/;"	f
-func_convert_file_nix_to_cygwin	tbsys/ltmain.sh	/^func_convert_file_nix_to_cygwin ()$/;"	f
 func_convert_file_nix_to_w32	tbnet/libtool	/^func_convert_file_nix_to_w32 ()$/;"	f
-func_convert_file_nix_to_w32	tbnet/ltmain.sh	/^func_convert_file_nix_to_w32 ()$/;"	f
 func_convert_file_nix_to_w32	tbsys/libtool	/^func_convert_file_nix_to_w32 ()$/;"	f
-func_convert_file_nix_to_w32	tbsys/ltmain.sh	/^func_convert_file_nix_to_w32 ()$/;"	f
 func_convert_file_noop	tbnet/libtool	/^func_convert_file_noop ()$/;"	f
-func_convert_file_noop	tbnet/ltmain.sh	/^func_convert_file_noop ()$/;"	f
 func_convert_file_noop	tbsys/libtool	/^func_convert_file_noop ()$/;"	f
-func_convert_file_noop	tbsys/ltmain.sh	/^func_convert_file_noop ()$/;"	f
 func_convert_path_check	tbnet/libtool	/^func_convert_path_check ()$/;"	f
-func_convert_path_check	tbnet/ltmain.sh	/^func_convert_path_check ()$/;"	f
 func_convert_path_check	tbsys/libtool	/^func_convert_path_check ()$/;"	f
-func_convert_path_check	tbsys/ltmain.sh	/^func_convert_path_check ()$/;"	f
 func_convert_path_cygwin_to_w32	tbnet/libtool	/^func_convert_path_cygwin_to_w32 ()$/;"	f
-func_convert_path_cygwin_to_w32	tbnet/ltmain.sh	/^func_convert_path_cygwin_to_w32 ()$/;"	f
 func_convert_path_cygwin_to_w32	tbsys/libtool	/^func_convert_path_cygwin_to_w32 ()$/;"	f
-func_convert_path_cygwin_to_w32	tbsys/ltmain.sh	/^func_convert_path_cygwin_to_w32 ()$/;"	f
 func_convert_path_front_back_pathsep	tbnet/libtool	/^func_convert_path_front_back_pathsep ()$/;"	f
-func_convert_path_front_back_pathsep	tbnet/ltmain.sh	/^func_convert_path_front_back_pathsep ()$/;"	f
 func_convert_path_front_back_pathsep	tbsys/libtool	/^func_convert_path_front_back_pathsep ()$/;"	f
-func_convert_path_front_back_pathsep	tbsys/ltmain.sh	/^func_convert_path_front_back_pathsep ()$/;"	f
 func_convert_path_msys_to_cygwin	tbnet/libtool	/^func_convert_path_msys_to_cygwin ()$/;"	f
-func_convert_path_msys_to_cygwin	tbnet/ltmain.sh	/^func_convert_path_msys_to_cygwin ()$/;"	f
 func_convert_path_msys_to_cygwin	tbsys/libtool	/^func_convert_path_msys_to_cygwin ()$/;"	f
-func_convert_path_msys_to_cygwin	tbsys/ltmain.sh	/^func_convert_path_msys_to_cygwin ()$/;"	f
 func_convert_path_msys_to_w32	tbnet/libtool	/^func_convert_path_msys_to_w32 ()$/;"	f
-func_convert_path_msys_to_w32	tbnet/ltmain.sh	/^func_convert_path_msys_to_w32 ()$/;"	f
 func_convert_path_msys_to_w32	tbsys/libtool	/^func_convert_path_msys_to_w32 ()$/;"	f
-func_convert_path_msys_to_w32	tbsys/ltmain.sh	/^func_convert_path_msys_to_w32 ()$/;"	f
 func_convert_path_nix_to_cygwin	tbnet/libtool	/^func_convert_path_nix_to_cygwin ()$/;"	f
-func_convert_path_nix_to_cygwin	tbnet/ltmain.sh	/^func_convert_path_nix_to_cygwin ()$/;"	f
 func_convert_path_nix_to_cygwin	tbsys/libtool	/^func_convert_path_nix_to_cygwin ()$/;"	f
-func_convert_path_nix_to_cygwin	tbsys/ltmain.sh	/^func_convert_path_nix_to_cygwin ()$/;"	f
 func_convert_path_nix_to_w32	tbnet/libtool	/^func_convert_path_nix_to_w32 ()$/;"	f
-func_convert_path_nix_to_w32	tbnet/ltmain.sh	/^func_convert_path_nix_to_w32 ()$/;"	f
 func_convert_path_nix_to_w32	tbsys/libtool	/^func_convert_path_nix_to_w32 ()$/;"	f
-func_convert_path_nix_to_w32	tbsys/ltmain.sh	/^func_convert_path_nix_to_w32 ()$/;"	f
 func_convert_path_noop	tbnet/libtool	/^func_convert_path_noop ()$/;"	f
-func_convert_path_noop	tbnet/ltmain.sh	/^func_convert_path_noop ()$/;"	f
 func_convert_path_noop	tbsys/libtool	/^func_convert_path_noop ()$/;"	f
-func_convert_path_noop	tbsys/ltmain.sh	/^func_convert_path_noop ()$/;"	f
 func_cygming_dll_for_implib	tbnet/libtool	/^func_cygming_dll_for_implib ()$/;"	f
-func_cygming_dll_for_implib	tbnet/ltmain.sh	/^func_cygming_dll_for_implib ()$/;"	f
 func_cygming_dll_for_implib	tbsys/libtool	/^func_cygming_dll_for_implib ()$/;"	f
-func_cygming_dll_for_implib	tbsys/ltmain.sh	/^func_cygming_dll_for_implib ()$/;"	f
 func_cygming_dll_for_implib_fallback	tbnet/libtool	/^func_cygming_dll_for_implib_fallback ()$/;"	f
-func_cygming_dll_for_implib_fallback	tbnet/ltmain.sh	/^func_cygming_dll_for_implib_fallback ()$/;"	f
 func_cygming_dll_for_implib_fallback	tbsys/libtool	/^func_cygming_dll_for_implib_fallback ()$/;"	f
-func_cygming_dll_for_implib_fallback	tbsys/ltmain.sh	/^func_cygming_dll_for_implib_fallback ()$/;"	f
 func_cygming_dll_for_implib_fallback_core	tbnet/libtool	/^func_cygming_dll_for_implib_fallback_core ()$/;"	f
-func_cygming_dll_for_implib_fallback_core	tbnet/ltmain.sh	/^func_cygming_dll_for_implib_fallback_core ()$/;"	f
 func_cygming_dll_for_implib_fallback_core	tbsys/libtool	/^func_cygming_dll_for_implib_fallback_core ()$/;"	f
-func_cygming_dll_for_implib_fallback_core	tbsys/ltmain.sh	/^func_cygming_dll_for_implib_fallback_core ()$/;"	f
 func_cygming_gnu_implib_p	tbnet/libtool	/^func_cygming_gnu_implib_p ()$/;"	f
-func_cygming_gnu_implib_p	tbnet/ltmain.sh	/^func_cygming_gnu_implib_p ()$/;"	f
 func_cygming_gnu_implib_p	tbsys/libtool	/^func_cygming_gnu_implib_p ()$/;"	f
-func_cygming_gnu_implib_p	tbsys/ltmain.sh	/^func_cygming_gnu_implib_p ()$/;"	f
 func_cygming_ms_implib_p	tbnet/libtool	/^func_cygming_ms_implib_p ()$/;"	f
-func_cygming_ms_implib_p	tbnet/ltmain.sh	/^func_cygming_ms_implib_p ()$/;"	f
 func_cygming_ms_implib_p	tbsys/libtool	/^func_cygming_ms_implib_p ()$/;"	f
-func_cygming_ms_implib_p	tbsys/ltmain.sh	/^func_cygming_ms_implib_p ()$/;"	f
 func_cygpath	tbnet/libtool	/^func_cygpath ()$/;"	f
-func_cygpath	tbnet/ltmain.sh	/^func_cygpath ()$/;"	f
 func_cygpath	tbsys/libtool	/^func_cygpath ()$/;"	f
-func_cygpath	tbsys/ltmain.sh	/^func_cygpath ()$/;"	f
 func_dirname	tbnet/config.status	/^func_dirname ()\\$/;"	f
 func_dirname	tbnet/configure	/^func_dirname ()\\$/;"	f
 func_dirname	tbnet/libtool	/^func_dirname ()$/;"	f
-func_dirname	tbnet/ltmain.sh	/^func_dirname ()$/;"	f
 func_dirname	tbsys/config.status	/^func_dirname ()\\$/;"	f
 func_dirname	tbsys/configure	/^func_dirname ()\\$/;"	f
 func_dirname	tbsys/libtool	/^func_dirname ()$/;"	f
-func_dirname	tbsys/ltmain.sh	/^func_dirname ()$/;"	f
 func_dirname_and_basename	tbnet/config.status	/^func_dirname_and_basename ()\\$/;"	f
 func_dirname_and_basename	tbnet/configure	/^func_dirname_and_basename ()\\$/;"	f
 func_dirname_and_basename	tbnet/libtool	/^func_dirname_and_basename ()$/;"	f
-func_dirname_and_basename	tbnet/ltmain.sh	/^func_dirname_and_basename ()$/;"	f
 func_dirname_and_basename	tbsys/config.status	/^func_dirname_and_basename ()\\$/;"	f
 func_dirname_and_basename	tbsys/configure	/^func_dirname_and_basename ()\\$/;"	f
 func_dirname_and_basename	tbsys/libtool	/^func_dirname_and_basename ()$/;"	f
-func_dirname_and_basename	tbsys/ltmain.sh	/^func_dirname_and_basename ()$/;"	f
 func_echo	tbnet/libtool	/^func_echo ()$/;"	f
-func_echo	tbnet/ltmain.sh	/^func_echo ()$/;"	f
 func_echo	tbsys/libtool	/^func_echo ()$/;"	f
-func_echo	tbsys/ltmain.sh	/^func_echo ()$/;"	f
 func_echo_all	tbnet/configure	/^func_echo_all ()$/;"	f
 func_echo_all	tbnet/libtool	/^func_echo_all ()$/;"	f
-func_echo_all	tbnet/ltmain.sh	/^func_echo_all ()$/;"	f
 func_echo_all	tbsys/configure	/^func_echo_all ()$/;"	f
 func_echo_all	tbsys/libtool	/^func_echo_all ()$/;"	f
-func_echo_all	tbsys/ltmain.sh	/^func_echo_all ()$/;"	f
 func_emit_cwrapperexe_src	tbnet/libtool	/^func_emit_cwrapperexe_src ()$/;"	f
-func_emit_cwrapperexe_src	tbnet/ltmain.sh	/^func_emit_cwrapperexe_src ()$/;"	f
 func_emit_cwrapperexe_src	tbsys/libtool	/^func_emit_cwrapperexe_src ()$/;"	f
-func_emit_cwrapperexe_src	tbsys/ltmain.sh	/^func_emit_cwrapperexe_src ()$/;"	f
 func_emit_wrapper	tbnet/libtool	/^func_emit_wrapper ()$/;"	f
-func_emit_wrapper	tbnet/ltmain.sh	/^func_emit_wrapper ()$/;"	f
 func_emit_wrapper	tbsys/libtool	/^func_emit_wrapper ()$/;"	f
-func_emit_wrapper	tbsys/ltmain.sh	/^func_emit_wrapper ()$/;"	f
 func_enable_tag	tbnet/libtool	/^func_enable_tag ()$/;"	f
-func_enable_tag	tbnet/ltmain.sh	/^func_enable_tag ()$/;"	f
 func_enable_tag	tbsys/libtool	/^func_enable_tag ()$/;"	f
-func_enable_tag	tbsys/ltmain.sh	/^func_enable_tag ()$/;"	f
 func_error	tbnet/libtool	/^func_error ()$/;"	f
-func_error	tbnet/ltmain.sh	/^func_error ()$/;"	f
 func_error	tbsys/libtool	/^func_error ()$/;"	f
-func_error	tbsys/ltmain.sh	/^func_error ()$/;"	f
 func_exec_program	tbnet/libtool	/^func_exec_program ()$/;"	f
-func_exec_program	tbnet/ltmain.sh	/^func_exec_program ()$/;"	f
 func_exec_program	tbsys/libtool	/^func_exec_program ()$/;"	f
-func_exec_program	tbsys/ltmain.sh	/^func_exec_program ()$/;"	f
 func_exec_program_core	tbnet/libtool	/^func_exec_program_core ()$/;"	f
-func_exec_program_core	tbnet/ltmain.sh	/^func_exec_program_core ()$/;"	f
 func_exec_program_core	tbsys/libtool	/^func_exec_program_core ()$/;"	f
-func_exec_program_core	tbsys/ltmain.sh	/^func_exec_program_core ()$/;"	f
 func_execute_cmds	tbnet/libtool	/^func_execute_cmds ()$/;"	f
-func_execute_cmds	tbnet/ltmain.sh	/^func_execute_cmds ()$/;"	f
 func_execute_cmds	tbsys/libtool	/^func_execute_cmds ()$/;"	f
-func_execute_cmds	tbsys/ltmain.sh	/^func_execute_cmds ()$/;"	f
 func_extract_an_archive	tbnet/libtool	/^func_extract_an_archive ()$/;"	f
-func_extract_an_archive	tbnet/ltmain.sh	/^func_extract_an_archive ()$/;"	f
 func_extract_an_archive	tbsys/libtool	/^func_extract_an_archive ()$/;"	f
-func_extract_an_archive	tbsys/ltmain.sh	/^func_extract_an_archive ()$/;"	f
 func_extract_archives	tbnet/libtool	/^func_extract_archives ()$/;"	f
-func_extract_archives	tbnet/ltmain.sh	/^func_extract_archives ()$/;"	f
 func_extract_archives	tbsys/libtool	/^func_extract_archives ()$/;"	f
-func_extract_archives	tbsys/ltmain.sh	/^func_extract_archives ()$/;"	f
 func_fallback_echo	tbnet/config.status	/^func_fallback_echo ()$/;"	f
 func_fallback_echo	tbnet/configure	/^  func_fallback_echo ()$/;"	f
 func_fallback_echo	tbnet/configure	/^func_fallback_echo ()$/;"	f
 func_fallback_echo	tbnet/libtool	/^func_fallback_echo ()$/;"	f
-func_fallback_echo	tbnet/ltmain.sh	/^func_fallback_echo ()$/;"	f
 func_fallback_echo	tbsys/config.status	/^func_fallback_echo ()$/;"	f
 func_fallback_echo	tbsys/configure	/^  func_fallback_echo ()$/;"	f
 func_fallback_echo	tbsys/configure	/^func_fallback_echo ()$/;"	f
 func_fallback_echo	tbsys/libtool	/^func_fallback_echo ()$/;"	f
-func_fallback_echo	tbsys/ltmain.sh	/^func_fallback_echo ()$/;"	f
 func_fatal_configuration	tbnet/libtool	/^func_fatal_configuration ()$/;"	f
-func_fatal_configuration	tbnet/ltmain.sh	/^func_fatal_configuration ()$/;"	f
 func_fatal_configuration	tbsys/libtool	/^func_fatal_configuration ()$/;"	f
-func_fatal_configuration	tbsys/ltmain.sh	/^func_fatal_configuration ()$/;"	f
 func_fatal_error	tbnet/libtool	/^func_fatal_error ()$/;"	f
-func_fatal_error	tbnet/ltmain.sh	/^func_fatal_error ()$/;"	f
 func_fatal_error	tbsys/libtool	/^func_fatal_error ()$/;"	f
-func_fatal_error	tbsys/ltmain.sh	/^func_fatal_error ()$/;"	f
 func_fatal_help	tbnet/libtool	/^func_fatal_help ()$/;"	f
-func_fatal_help	tbnet/ltmain.sh	/^func_fatal_help ()$/;"	f
 func_fatal_help	tbsys/libtool	/^func_fatal_help ()$/;"	f
-func_fatal_help	tbsys/ltmain.sh	/^func_fatal_help ()$/;"	f
 func_features	tbnet/libtool	/^func_features ()$/;"	f
-func_features	tbnet/ltmain.sh	/^func_features ()$/;"	f
 func_features	tbsys/libtool	/^func_features ()$/;"	f
-func_features	tbsys/ltmain.sh	/^func_features ()$/;"	f
 func_generate_dlsyms	tbnet/libtool	/^func_generate_dlsyms ()$/;"	f
-func_generate_dlsyms	tbnet/ltmain.sh	/^func_generate_dlsyms ()$/;"	f
 func_generate_dlsyms	tbsys/libtool	/^func_generate_dlsyms ()$/;"	f
-func_generate_dlsyms	tbsys/ltmain.sh	/^func_generate_dlsyms ()$/;"	f
 func_grep	tbnet/libtool	/^func_grep ()$/;"	f
-func_grep	tbnet/ltmain.sh	/^func_grep ()$/;"	f
 func_grep	tbsys/libtool	/^func_grep ()$/;"	f
-func_grep	tbsys/ltmain.sh	/^func_grep ()$/;"	f
 func_help	tbnet/libtool	/^func_help ()$/;"	f
-func_help	tbnet/ltmain.sh	/^func_help ()$/;"	f
 func_help	tbsys/libtool	/^func_help ()$/;"	f
-func_help	tbsys/ltmain.sh	/^func_help ()$/;"	f
 func_infer_tag	tbnet/libtool	/^func_infer_tag ()$/;"	f
-func_infer_tag	tbnet/ltmain.sh	/^func_infer_tag ()$/;"	f
 func_infer_tag	tbsys/libtool	/^func_infer_tag ()$/;"	f
-func_infer_tag	tbsys/ltmain.sh	/^func_infer_tag ()$/;"	f
 func_init_to_host_path_cmd	tbnet/libtool	/^func_init_to_host_path_cmd ()$/;"	f
-func_init_to_host_path_cmd	tbnet/ltmain.sh	/^func_init_to_host_path_cmd ()$/;"	f
 func_init_to_host_path_cmd	tbsys/libtool	/^func_init_to_host_path_cmd ()$/;"	f
-func_init_to_host_path_cmd	tbsys/ltmain.sh	/^func_init_to_host_path_cmd ()$/;"	f
 func_lalib_p	tbnet/libtool	/^func_lalib_p ()$/;"	f
-func_lalib_p	tbnet/ltmain.sh	/^func_lalib_p ()$/;"	f
 func_lalib_p	tbsys/libtool	/^func_lalib_p ()$/;"	f
-func_lalib_p	tbsys/ltmain.sh	/^func_lalib_p ()$/;"	f
 func_lalib_unsafe_p	tbnet/libtool	/^func_lalib_unsafe_p ()$/;"	f
-func_lalib_unsafe_p	tbnet/ltmain.sh	/^func_lalib_unsafe_p ()$/;"	f
 func_lalib_unsafe_p	tbsys/libtool	/^func_lalib_unsafe_p ()$/;"	f
-func_lalib_unsafe_p	tbsys/ltmain.sh	/^func_lalib_unsafe_p ()$/;"	f
 func_len	tbnet/config.status	/^func_len ()\\$/;"	f
 func_len	tbnet/configure	/^func_len ()\\$/;"	f
 func_len	tbnet/libtool	/^func_len ()$/;"	f
-func_len	tbnet/ltmain.sh	/^func_len ()$/;"	f
 func_len	tbsys/config.status	/^func_len ()\\$/;"	f
 func_len	tbsys/configure	/^func_len ()\\$/;"	f
 func_len	tbsys/libtool	/^func_len ()$/;"	f
-func_len	tbsys/ltmain.sh	/^func_len ()$/;"	f
 func_lo2o	tbnet/config.status	/^func_lo2o ()\\$/;"	f
 func_lo2o	tbnet/configure	/^func_lo2o ()\\$/;"	f
 func_lo2o	tbnet/libtool	/^func_lo2o ()$/;"	f
-func_lo2o	tbnet/ltmain.sh	/^func_lo2o ()$/;"	f
 func_lo2o	tbsys/config.status	/^func_lo2o ()\\$/;"	f
 func_lo2o	tbsys/configure	/^func_lo2o ()\\$/;"	f
 func_lo2o	tbsys/libtool	/^func_lo2o ()$/;"	f
-func_lo2o	tbsys/ltmain.sh	/^func_lo2o ()$/;"	f
 func_lt_dump_args	tbnet/libtool	/^func_lt_dump_args ()$/;"	f
-func_lt_dump_args	tbnet/ltmain.sh	/^func_lt_dump_args ()$/;"	f
 func_lt_dump_args	tbsys/libtool	/^func_lt_dump_args ()$/;"	f
-func_lt_dump_args	tbsys/ltmain.sh	/^func_lt_dump_args ()$/;"	f
 func_ltwrapper_executable_p	tbnet/libtool	/^func_ltwrapper_executable_p ()$/;"	f
-func_ltwrapper_executable_p	tbnet/ltmain.sh	/^func_ltwrapper_executable_p ()$/;"	f
 func_ltwrapper_executable_p	tbsys/libtool	/^func_ltwrapper_executable_p ()$/;"	f
-func_ltwrapper_executable_p	tbsys/ltmain.sh	/^func_ltwrapper_executable_p ()$/;"	f
 func_ltwrapper_p	tbnet/libtool	/^func_ltwrapper_p ()$/;"	f
-func_ltwrapper_p	tbnet/ltmain.sh	/^func_ltwrapper_p ()$/;"	f
 func_ltwrapper_p	tbsys/libtool	/^func_ltwrapper_p ()$/;"	f
-func_ltwrapper_p	tbsys/ltmain.sh	/^func_ltwrapper_p ()$/;"	f
 func_ltwrapper_script_p	tbnet/libtool	/^func_ltwrapper_script_p ()$/;"	f
-func_ltwrapper_script_p	tbnet/ltmain.sh	/^func_ltwrapper_script_p ()$/;"	f
 func_ltwrapper_script_p	tbsys/libtool	/^func_ltwrapper_script_p ()$/;"	f
-func_ltwrapper_script_p	tbsys/ltmain.sh	/^func_ltwrapper_script_p ()$/;"	f
 func_ltwrapper_scriptname	tbnet/libtool	/^func_ltwrapper_scriptname ()$/;"	f
-func_ltwrapper_scriptname	tbnet/ltmain.sh	/^func_ltwrapper_scriptname ()$/;"	f
 func_ltwrapper_scriptname	tbsys/libtool	/^func_ltwrapper_scriptname ()$/;"	f
-func_ltwrapper_scriptname	tbsys/ltmain.sh	/^func_ltwrapper_scriptname ()$/;"	f
 func_missing_arg	tbnet/libtool	/^func_missing_arg ()$/;"	f
-func_missing_arg	tbnet/ltmain.sh	/^func_missing_arg ()$/;"	f
 func_missing_arg	tbsys/libtool	/^func_missing_arg ()$/;"	f
-func_missing_arg	tbsys/ltmain.sh	/^func_missing_arg ()$/;"	f
 func_mkdir_p	tbnet/libtool	/^func_mkdir_p ()$/;"	f
-func_mkdir_p	tbnet/ltmain.sh	/^func_mkdir_p ()$/;"	f
 func_mkdir_p	tbsys/libtool	/^func_mkdir_p ()$/;"	f
-func_mkdir_p	tbsys/ltmain.sh	/^func_mkdir_p ()$/;"	f
 func_mktempdir	tbnet/libtool	/^func_mktempdir ()$/;"	f
-func_mktempdir	tbnet/ltmain.sh	/^func_mktempdir ()$/;"	f
 func_mktempdir	tbsys/libtool	/^func_mktempdir ()$/;"	f
-func_mktempdir	tbsys/ltmain.sh	/^func_mktempdir ()$/;"	f
 func_mode_compile	tbnet/libtool	/^func_mode_compile ()$/;"	f
-func_mode_compile	tbnet/ltmain.sh	/^func_mode_compile ()$/;"	f
 func_mode_compile	tbsys/libtool	/^func_mode_compile ()$/;"	f
-func_mode_compile	tbsys/ltmain.sh	/^func_mode_compile ()$/;"	f
 func_mode_execute	tbnet/libtool	/^func_mode_execute ()$/;"	f
-func_mode_execute	tbnet/ltmain.sh	/^func_mode_execute ()$/;"	f
 func_mode_execute	tbsys/libtool	/^func_mode_execute ()$/;"	f
-func_mode_execute	tbsys/ltmain.sh	/^func_mode_execute ()$/;"	f
 func_mode_finish	tbnet/libtool	/^func_mode_finish ()$/;"	f
-func_mode_finish	tbnet/ltmain.sh	/^func_mode_finish ()$/;"	f
 func_mode_finish	tbsys/libtool	/^func_mode_finish ()$/;"	f
-func_mode_finish	tbsys/ltmain.sh	/^func_mode_finish ()$/;"	f
 func_mode_help	tbnet/libtool	/^func_mode_help ()$/;"	f
-func_mode_help	tbnet/ltmain.sh	/^func_mode_help ()$/;"	f
 func_mode_help	tbsys/libtool	/^func_mode_help ()$/;"	f
-func_mode_help	tbsys/ltmain.sh	/^func_mode_help ()$/;"	f
 func_mode_install	tbnet/libtool	/^func_mode_install ()$/;"	f
-func_mode_install	tbnet/ltmain.sh	/^func_mode_install ()$/;"	f
 func_mode_install	tbsys/libtool	/^func_mode_install ()$/;"	f
-func_mode_install	tbsys/ltmain.sh	/^func_mode_install ()$/;"	f
 func_mode_link	tbnet/libtool	/^func_mode_link ()$/;"	f
-func_mode_link	tbnet/ltmain.sh	/^func_mode_link ()$/;"	f
 func_mode_link	tbsys/libtool	/^func_mode_link ()$/;"	f
-func_mode_link	tbsys/ltmain.sh	/^func_mode_link ()$/;"	f
 func_mode_uninstall	tbnet/libtool	/^func_mode_uninstall ()$/;"	f
-func_mode_uninstall	tbnet/ltmain.sh	/^func_mode_uninstall ()$/;"	f
 func_mode_uninstall	tbsys/libtool	/^func_mode_uninstall ()$/;"	f
-func_mode_uninstall	tbsys/ltmain.sh	/^func_mode_uninstall ()$/;"	f
 func_normal_abspath	tbnet/libtool	/^func_normal_abspath ()$/;"	f
-func_normal_abspath	tbnet/ltmain.sh	/^func_normal_abspath ()$/;"	f
 func_normal_abspath	tbsys/libtool	/^func_normal_abspath ()$/;"	f
-func_normal_abspath	tbsys/ltmain.sh	/^func_normal_abspath ()$/;"	f
 func_parse_lt_options	tbnet/libtool	/^func_parse_lt_options ()$/;"	f
-func_parse_lt_options	tbnet/ltmain.sh	/^func_parse_lt_options ()$/;"	f
 func_parse_lt_options	tbsys/libtool	/^func_parse_lt_options ()$/;"	f
-func_parse_lt_options	tbsys/ltmain.sh	/^func_parse_lt_options ()$/;"	f
 func_quote_for_eval	tbnet/libtool	/^func_quote_for_eval ()$/;"	f
-func_quote_for_eval	tbnet/ltmain.sh	/^func_quote_for_eval ()$/;"	f
 func_quote_for_eval	tbsys/libtool	/^func_quote_for_eval ()$/;"	f
-func_quote_for_eval	tbsys/ltmain.sh	/^func_quote_for_eval ()$/;"	f
 func_quote_for_expand	tbnet/libtool	/^func_quote_for_expand ()$/;"	f
-func_quote_for_expand	tbnet/ltmain.sh	/^func_quote_for_expand ()$/;"	f
 func_quote_for_expand	tbsys/libtool	/^func_quote_for_expand ()$/;"	f
-func_quote_for_expand	tbsys/ltmain.sh	/^func_quote_for_expand ()$/;"	f
 func_relative_path	tbnet/libtool	/^func_relative_path ()$/;"	f
-func_relative_path	tbnet/ltmain.sh	/^func_relative_path ()$/;"	f
 func_relative_path	tbsys/libtool	/^func_relative_path ()$/;"	f
-func_relative_path	tbsys/ltmain.sh	/^func_relative_path ()$/;"	f
 func_replace_sysroot	tbnet/libtool	/^func_replace_sysroot ()$/;"	f
-func_replace_sysroot	tbnet/ltmain.sh	/^func_replace_sysroot ()$/;"	f
 func_replace_sysroot	tbsys/libtool	/^func_replace_sysroot ()$/;"	f
-func_replace_sysroot	tbsys/ltmain.sh	/^func_replace_sysroot ()$/;"	f
 func_resolve_sysroot	tbnet/libtool	/^func_resolve_sysroot ()$/;"	f
-func_resolve_sysroot	tbnet/ltmain.sh	/^func_resolve_sysroot ()$/;"	f
 func_resolve_sysroot	tbsys/libtool	/^func_resolve_sysroot ()$/;"	f
-func_resolve_sysroot	tbsys/ltmain.sh	/^func_resolve_sysroot ()$/;"	f
 func_show_eval	tbnet/libtool	/^func_show_eval ()$/;"	f
-func_show_eval	tbnet/ltmain.sh	/^func_show_eval ()$/;"	f
 func_show_eval	tbsys/libtool	/^func_show_eval ()$/;"	f
-func_show_eval	tbsys/ltmain.sh	/^func_show_eval ()$/;"	f
 func_show_eval_locale	tbnet/libtool	/^func_show_eval_locale ()$/;"	f
-func_show_eval_locale	tbnet/ltmain.sh	/^func_show_eval_locale ()$/;"	f
 func_show_eval_locale	tbsys/libtool	/^func_show_eval_locale ()$/;"	f
-func_show_eval_locale	tbsys/ltmain.sh	/^func_show_eval_locale ()$/;"	f
 func_source	tbnet/libtool	/^func_source ()$/;"	f
-func_source	tbnet/ltmain.sh	/^func_source ()$/;"	f
 func_source	tbsys/libtool	/^func_source ()$/;"	f
-func_source	tbsys/ltmain.sh	/^func_source ()$/;"	f
 func_split_long_opt	tbnet/config.status	/^func_split_long_opt ()\\$/;"	f
 func_split_long_opt	tbnet/configure	/^func_split_long_opt ()\\$/;"	f
 func_split_long_opt	tbnet/libtool	/^func_split_long_opt ()$/;"	f
-func_split_long_opt	tbnet/ltmain.sh	/^func_split_long_opt ()$/;"	f
 func_split_long_opt	tbsys/config.status	/^func_split_long_opt ()\\$/;"	f
 func_split_long_opt	tbsys/configure	/^func_split_long_opt ()\\$/;"	f
 func_split_long_opt	tbsys/libtool	/^func_split_long_opt ()$/;"	f
-func_split_long_opt	tbsys/ltmain.sh	/^func_split_long_opt ()$/;"	f
 func_split_short_opt	tbnet/config.status	/^func_split_short_opt ()\\$/;"	f
 func_split_short_opt	tbnet/configure	/^func_split_short_opt ()\\$/;"	f
 func_split_short_opt	tbnet/libtool	/^func_split_short_opt ()$/;"	f
-func_split_short_opt	tbnet/ltmain.sh	/^func_split_short_opt ()$/;"	f
 func_split_short_opt	tbsys/config.status	/^func_split_short_opt ()\\$/;"	f
 func_split_short_opt	tbsys/configure	/^func_split_short_opt ()\\$/;"	f
 func_split_short_opt	tbsys/libtool	/^func_split_short_opt ()$/;"	f
-func_split_short_opt	tbsys/ltmain.sh	/^func_split_short_opt ()$/;"	f
 func_stripname	tbnet/config.status	/^func_stripname ()\\$/;"	f
 func_stripname	tbnet/configure	/^func_stripname ()\\$/;"	f
 func_stripname	tbnet/libtool	/^func_stripname ()$/;"	f
-func_stripname	tbnet/ltmain.sh	/^func_stripname ()$/;"	f
 func_stripname	tbsys/config.status	/^func_stripname ()\\$/;"	f
 func_stripname	tbsys/configure	/^func_stripname ()\\$/;"	f
 func_stripname	tbsys/libtool	/^func_stripname ()$/;"	f
-func_stripname	tbsys/ltmain.sh	/^func_stripname ()$/;"	f
 func_stripname_cnf	tbnet/configure	/^func_stripname_cnf ()$/;"	f
 func_stripname_cnf	tbsys/configure	/^func_stripname_cnf ()$/;"	f
 func_to_host_file	tbnet/libtool	/^func_to_host_file ()$/;"	f
-func_to_host_file	tbnet/ltmain.sh	/^func_to_host_file ()$/;"	f
 func_to_host_file	tbsys/libtool	/^func_to_host_file ()$/;"	f
-func_to_host_file	tbsys/ltmain.sh	/^func_to_host_file ()$/;"	f
 func_to_host_path	tbnet/libtool	/^func_to_host_path ()$/;"	f
-func_to_host_path	tbnet/ltmain.sh	/^func_to_host_path ()$/;"	f
 func_to_host_path	tbsys/libtool	/^func_to_host_path ()$/;"	f
-func_to_host_path	tbsys/ltmain.sh	/^func_to_host_path ()$/;"	f
 func_to_tool_file	tbnet/libtool	/^func_to_tool_file ()$/;"	f
-func_to_tool_file	tbnet/ltmain.sh	/^func_to_tool_file ()$/;"	f
 func_to_tool_file	tbsys/libtool	/^func_to_tool_file ()$/;"	f
-func_to_tool_file	tbsys/ltmain.sh	/^func_to_tool_file ()$/;"	f
 func_tr_sh	tbnet/libtool	/^func_tr_sh ()$/;"	f
-func_tr_sh	tbnet/ltmain.sh	/^func_tr_sh ()$/;"	f
 func_tr_sh	tbsys/libtool	/^func_tr_sh ()$/;"	f
-func_tr_sh	tbsys/ltmain.sh	/^func_tr_sh ()$/;"	f
 func_usage	tbnet/libtool	/^func_usage ()$/;"	f
-func_usage	tbnet/ltmain.sh	/^func_usage ()$/;"	f
 func_usage	tbsys/libtool	/^func_usage ()$/;"	f
-func_usage	tbsys/ltmain.sh	/^func_usage ()$/;"	f
 func_verbose	tbnet/libtool	/^func_verbose ()$/;"	f
-func_verbose	tbnet/ltmain.sh	/^func_verbose ()$/;"	f
 func_verbose	tbsys/libtool	/^func_verbose ()$/;"	f
-func_verbose	tbsys/ltmain.sh	/^func_verbose ()$/;"	f
 func_version	tbnet/libtool	/^func_version ()$/;"	f
-func_version	tbnet/ltmain.sh	/^func_version ()$/;"	f
 func_version	tbsys/libtool	/^func_version ()$/;"	f
-func_version	tbsys/ltmain.sh	/^func_version ()$/;"	f
 func_warning	tbnet/libtool	/^func_warning ()$/;"	f
-func_warning	tbnet/ltmain.sh	/^func_warning ()$/;"	f
 func_warning	tbsys/libtool	/^func_warning ()$/;"	f
-func_warning	tbsys/ltmain.sh	/^func_warning ()$/;"	f
 func_win32_import_lib_p	tbnet/libtool	/^func_win32_import_lib_p ()$/;"	f
-func_win32_import_lib_p	tbnet/ltmain.sh	/^func_win32_import_lib_p ()$/;"	f
 func_win32_import_lib_p	tbsys/libtool	/^func_win32_import_lib_p ()$/;"	f
-func_win32_import_lib_p	tbsys/ltmain.sh	/^func_win32_import_lib_p ()$/;"	f
 func_win32_libid	tbnet/libtool	/^func_win32_libid ()$/;"	f
-func_win32_libid	tbnet/ltmain.sh	/^func_win32_libid ()$/;"	f
 func_win32_libid	tbsys/libtool	/^func_win32_libid ()$/;"	f
-func_win32_libid	tbsys/ltmain.sh	/^func_win32_libid ()$/;"	f
 func_write_libtool_object	tbnet/libtool	/^func_write_libtool_object ()$/;"	f
-func_write_libtool_object	tbnet/ltmain.sh	/^func_write_libtool_object ()$/;"	f
 func_write_libtool_object	tbsys/libtool	/^func_write_libtool_object ()$/;"	f
-func_write_libtool_object	tbsys/ltmain.sh	/^func_write_libtool_object ()$/;"	f
 func_xform	tbnet/config.status	/^func_xform ()\\$/;"	f
 func_xform	tbnet/configure	/^func_xform ()\\$/;"	f
 func_xform	tbnet/libtool	/^func_xform ()$/;"	f
-func_xform	tbnet/ltmain.sh	/^func_xform ()$/;"	f
 func_xform	tbsys/config.status	/^func_xform ()\\$/;"	f
 func_xform	tbsys/configure	/^func_xform ()\\$/;"	f
 func_xform	tbsys/libtool	/^func_xform ()$/;"	f
-func_xform	tbsys/ltmain.sh	/^func_xform ()$/;"	f
 gConstruct	tbsys/src/Memory.hpp	/^template <typename Type> inline Type *gConstruct(void *p)$/;"	f	namespace:tbsys
 gCount	tbsys/test/testThreadPool.cpp	/^static int64_t gCount;$/;"	v	file:
 gDelete	tbsys/src/Memory.hpp	/^template <typename Type> inline void gDelete(Type *&rp)$/;"	f	namespace:tbsys
@@ -2907,8 +2549,6 @@ getUnreleasedEntry	tbsys/src/profiler.h	/^	Entry *getUnreleasedEntry() {$/;"	f	c
 getUseListCount	tbnet/src/channelpool.h	/^    int getUseListCount() {$/;"	f	class:tbnet::ChannelPool
 get_cur_tv	tbsys/src/tblog.h	/^    static inline struct timeval get_cur_tv()$/;"	f	class:tbsys::CLogger
 getpid	tbsys/src/thread.h	/^    int getpid() {$/;"	f	class:tbsys::CThread
-give_advice	tbnet/missing	/^give_advice ()$/;"	f
-give_advice	tbsys/missing	/^give_advice ()$/;"	f
 globalMutex	tbsys/src/StaticMutex.cpp	/^tbutil::StaticMutex tbutil::globalMutex = TNET_STATIC_MUTEX_INITIALIZER;$/;"	m	class:tbutil	file:
 gsendcount	tbnet/test/echoclient.cpp	/^int gsendcount = 1000;$/;"	v
 gsendlen	tbnet/test/echoclient.cpp	/^int64_t gsendlen = 0;$/;"	v
@@ -2929,40 +2569,12 @@ handleWriteEvent	tbnet/src/tcpcomponent.cpp	/^bool TCPComponent::handleWriteEven
 handleWriteEvent	tbnet/src/udpacceptor.h	/^    bool handleWriteEvent() {$/;"	f	class:tbnet::UDPAcceptor
 handleWriteEvent	tbnet/src/udpcomponent.cpp	/^bool UDPComponent::handleWriteEvent() {$/;"	f	class:tbnet::UDPComponent
 hasRun	tbsys/test/testTimer.cpp	/^    hasRun() const$/;"	f	class:TestTask
-has_opt	tbnet/Makefile	/^      *$$target_option*) has_opt=yes; break;; \\$/;"	m
-has_opt	tbnet/Makefile	/^  has_opt=no; \\$/;"	m
-has_opt	tbnet/src/Makefile	/^      *$$target_option*) has_opt=yes; break;; \\$/;"	m
-has_opt	tbnet/src/Makefile	/^  has_opt=no; \\$/;"	m
-has_opt	tbnet/src/test/Makefile	/^      *$$target_option*) has_opt=yes; break;; \\$/;"	m
-has_opt	tbnet/src/test/Makefile	/^  has_opt=no; \\$/;"	m
-has_opt	tbnet/test/Makefile	/^      *$$target_option*) has_opt=yes; break;; \\$/;"	m
-has_opt	tbnet/test/Makefile	/^  has_opt=no; \\$/;"	m
-has_opt	tbsys/Makefile	/^      *$$target_option*) has_opt=yes; break;; \\$/;"	m
-has_opt	tbsys/Makefile	/^  has_opt=no; \\$/;"	m
-has_opt	tbsys/src/Makefile	/^      *$$target_option*) has_opt=yes; break;; \\$/;"	m
-has_opt	tbsys/src/Makefile	/^  has_opt=no; \\$/;"	m
-has_opt	tbsys/test/Makefile	/^      *$$target_option*) has_opt=yes; break;; \\$/;"	m
-has_opt	tbsys/test/Makefile	/^  has_opt=no; \\$/;"	m
 hashCode	tbsys/src/stringutil.cpp	/^    int CStringUtil::hashCode(const char *str)$/;"	f	class:tbsys::CStringUtil
 head	tbnet/src/packetqueue.h	/^    Packet *head()$/;"	f	class:tbnet::PacketQueue
 head	tbnet/src/packetqueuethread.h	/^    Packet *head()$/;"	f	class:tbnet::PacketQueueThread
 head	tbsys/src/linklist.h	/^        NodeT* head() const { return _head; }$/;"	f	class:tbsys::LinkList
 head	tbsys/src/linklist.h	/^        void head(NodeT* h) { _head = h; }$/;"	f	class:tbsys::LinkList
 help	tbsys/src/Service.cpp	/^void Service::help()$/;"	f	class:tbutil::Service
-here	tbnet/Makefile	/^	here=`$(am__cd) $(top_builddir) && pwd` \\$/;"	m
-here	tbnet/Makefile	/^	here=`pwd`; \\$/;"	m
-here	tbnet/src/Makefile	/^	here=`$(am__cd) $(top_builddir) && pwd` \\$/;"	m
-here	tbnet/src/Makefile	/^	here=`pwd`; \\$/;"	m
-here	tbnet/src/test/Makefile	/^	here=`$(am__cd) $(top_builddir) && pwd` \\$/;"	m
-here	tbnet/src/test/Makefile	/^	here=`pwd`; \\$/;"	m
-here	tbnet/test/Makefile	/^	here=`$(am__cd) $(top_builddir) && pwd` \\$/;"	m
-here	tbnet/test/Makefile	/^	here=`pwd`; \\$/;"	m
-here	tbsys/Makefile	/^	here=`$(am__cd) $(top_builddir) && pwd` \\$/;"	m
-here	tbsys/Makefile	/^	here=`pwd`; \\$/;"	m
-here	tbsys/src/Makefile	/^	here=`$(am__cd) $(top_builddir) && pwd` \\$/;"	m
-here	tbsys/src/Makefile	/^	here=`pwd`; \\$/;"	m
-here	tbsys/test/Makefile	/^	here=`$(am__cd) $(top_builddir) && pwd` \\$/;"	m
-here	tbsys/test/Makefile	/^	here=`pwd`; \\$/;"	m
 hook	tbsys/src/thread.h	/^    static void *hook(void *arg) {$/;"	f	class:tbsys::CThread
 host	tbnet/Makefile	/^host = x86_64-unknown-linux-gnu$/;"	m
 host	tbnet/src/Makefile	/^host = x86_64-unknown-linux-gnu$/;"	m
@@ -3021,10 +2633,6 @@ httpserver_SOURCES	tbnet/test/Makefile	/^httpserver_SOURCES = httpserver.cpp$/;"
 id	tbsys/src/TbThread.cpp	/^pthread_t Thread::id() const$/;"	f	class:tbutil::Thread
 include_HEADERS	tbnet/src/Makefile	/^include_HEADERS = channel.h channelpool.h connection.h controlpacket.h databuffer.h defaultpacketstreamer.h epollsocketevent.h httppacketstreamer.h httprequestpacket.h httpresponsepacket.h iocomponent.h ipacketfactory.h ipackethandler.h ipacketstreamer.h iserveradapter.h packet.h packetqueue.h packetqueuethread.h serversocket.h socketevent.h socket.h stats.h tbnet.h tcpacceptor.h tcpcomponent.h tcpconnection.h transport.h udpacceptor.h udpcomponent.h udpconnection.h connectionmanager.h$/;"	m
 include_HEADERS	tbsys/src/Makefile	/^include_HEADERS = atomic.h config.h defaultrunnable.h filequeue.h \\$/;"	m
-include_option	tbnet/Makefile	/^	  include_option=--etags-include; \\$/;"	m
-include_option	tbnet/Makefile	/^	  include_option=--include; \\$/;"	m
-include_option	tbsys/Makefile	/^	  include_option=--etags-include; \\$/;"	m
-include_option	tbsys/Makefile	/^	  include_option=--include; \\$/;"	m
 includedir	tbnet/Makefile	/^includedir = \/usr\/local\/taobao\/include\/tbnet$/;"	m
 includedir	tbnet/src/Makefile	/^includedir = \/usr\/local\/taobao\/include\/tbnet$/;"	m
 includedir	tbnet/src/test/Makefile	/^includedir = \/usr\/local\/taobao\/include\/tbnet$/;"	m
@@ -3057,19 +2665,12 @@ install_sh_DATA	tbnet/test/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$
 install_sh_DATA	tbsys/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
 install_sh_DATA	tbsys/src/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
 install_sh_DATA	tbsys/test/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
-install_sh_PROGRAM	tbnet/Makefile	/^	    install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
 install_sh_PROGRAM	tbnet/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
-install_sh_PROGRAM	tbnet/src/Makefile	/^	    install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
 install_sh_PROGRAM	tbnet/src/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
-install_sh_PROGRAM	tbnet/src/test/Makefile	/^	    install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
 install_sh_PROGRAM	tbnet/src/test/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
-install_sh_PROGRAM	tbnet/test/Makefile	/^	    install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
 install_sh_PROGRAM	tbnet/test/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
-install_sh_PROGRAM	tbsys/Makefile	/^	    install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
 install_sh_PROGRAM	tbsys/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
-install_sh_PROGRAM	tbsys/src/Makefile	/^	    install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
 install_sh_PROGRAM	tbsys/src/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
-install_sh_PROGRAM	tbsys/test/Makefile	/^	    install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \\$/;"	m
 install_sh_PROGRAM	tbsys/test/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
 install_sh_SCRIPT	tbnet/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
 install_sh_SCRIPT	tbnet/src/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
@@ -3134,55 +2735,9 @@ libtbsys_la_LINK	tbsys/src/Makefile	/^libtbsys_la_LINK = $(LIBTOOL) $(AM_V_lt) -
 libtbsys_la_OBJECTS	tbsys/src/Makefile	/^libtbsys_la_OBJECTS = $(am_libtbsys_la_OBJECTS)$/;"	m
 libtbsys_la_SOURCES	tbsys/src/Makefile	/^libtbsys_la_SOURCES = $(source_list)$/;"	m
 line	tbsys/src/Exception.cpp	/^int Exception::line() const$/;"	f	class:tbutil::Exception
-list	tbnet/Makefile	/^	  *) list='$(SUBDIRS)' ;; \\$/;"	m
-list	tbnet/Makefile	/^	  distclean-* | maintainer-clean-*) list='$(DIST_SUBDIRS)' ;; \\$/;"	m
-list	tbnet/Makefile	/^	  list='$(DIST_ARCHIVES)'; for i in $$list; do echo $$i; done) | \\$/;"	m
-list	tbnet/Makefile	/^	list='$(DISTFILES)'; \\$/;"	m
-list	tbnet/Makefile	/^	list='$(SUBDIRS)'; for subdir in $$list; do \\$/;"	m
-list	tbnet/Makefile	/^	list='$(am__tagged_files)'; \\$/;"	m
-list	tbnet/Makefile	/^  list='$(am__tagged_files)'; \\$/;"	m
-list	tbnet/src/Makefile	/^	@list='$(include_HEADERS)'; test -n "$(includedir)" || list=; \\$/;"	m
-list	tbnet/src/Makefile	/^	@list='$(lib_LTLIBRARIES)'; test -n "$(libdir)" || list=; \\$/;"	m
-list	tbnet/src/Makefile	/^	list='$(DISTFILES)'; \\$/;"	m
-list	tbnet/src/Makefile	/^	list='$(am__tagged_files)'; \\$/;"	m
-list	tbnet/src/Makefile	/^	list=`for p in $$list; do echo "$$p"; done | sed 's\/$(EXEEXT)$$\/\/'`; \\$/;"	m
-list	tbnet/src/Makefile	/^  list='$(am__tagged_files)'; \\$/;"	m
-list	tbnet/src/test/Makefile	/^	list='$(DISTFILES)'; \\$/;"	m
-list	tbnet/src/test/Makefile	/^	list='$(am__tagged_files)'; \\$/;"	m
-list	tbnet/src/test/Makefile	/^	list=`for p in $$list; do echo "$$p"; done | sed 's\/$(EXEEXT)$$\/\/'`; \\$/;"	m
-list	tbnet/src/test/Makefile	/^  list='$(am__tagged_files)'; \\$/;"	m
-list	tbnet/test/Makefile	/^	list='$(DISTFILES)'; \\$/;"	m
-list	tbnet/test/Makefile	/^	list='$(am__tagged_files)'; \\$/;"	m
-list	tbnet/test/Makefile	/^	list=`for p in $$list; do echo "$$p"; done | sed 's\/$(EXEEXT)$$\/\/'`; \\$/;"	m
-list	tbnet/test/Makefile	/^  list='$(am__tagged_files)'; \\$/;"	m
-list	tbsys/Makefile	/^	  *) list='$(SUBDIRS)' ;; \\$/;"	m
-list	tbsys/Makefile	/^	  distclean-* | maintainer-clean-*) list='$(DIST_SUBDIRS)' ;; \\$/;"	m
-list	tbsys/Makefile	/^	  list='$(DIST_ARCHIVES)'; for i in $$list; do echo $$i; done) | \\$/;"	m
-list	tbsys/Makefile	/^	list='$(DISTFILES)'; \\$/;"	m
-list	tbsys/Makefile	/^	list='$(SUBDIRS)'; for subdir in $$list; do \\$/;"	m
-list	tbsys/Makefile	/^	list='$(am__tagged_files)'; \\$/;"	m
-list	tbsys/Makefile	/^  list='$(am__tagged_files)'; \\$/;"	m
-list	tbsys/src/Makefile	/^	@list='$(include_HEADERS)'; test -n "$(includedir)" || list=; \\$/;"	m
-list	tbsys/src/Makefile	/^	@list='$(lib_LTLIBRARIES)'; test -n "$(libdir)" || list=; \\$/;"	m
-list	tbsys/src/Makefile	/^	list='$(DISTFILES)'; \\$/;"	m
-list	tbsys/src/Makefile	/^	list='$(am__tagged_files)'; \\$/;"	m
-list	tbsys/src/Makefile	/^	list=`for p in $$list; do echo "$$p"; done | sed 's\/$(EXEEXT)$$\/\/'`; \\$/;"	m
-list	tbsys/src/Makefile	/^  list='$(am__tagged_files)'; \\$/;"	m
-list	tbsys/test/Makefile	/^	list='$(DISTFILES)'; \\$/;"	m
-list	tbsys/test/Makefile	/^	list='$(am__tagged_files)'; \\$/;"	m
-list	tbsys/test/Makefile	/^	list=`for p in $$list; do echo "$$p"; done | sed 's\/$(EXEEXT)$$\/\/'`; \\$/;"	m
-list	tbsys/test/Makefile	/^  list='$(am__tagged_files)'; \\$/;"	m
-list2	tbnet/src/Makefile	/^	    list2="$$list2 $$p"; \\$/;"	m
-list2	tbnet/src/Makefile	/^	list2=; for p in $$list; do \\$/;"	m
-list2	tbsys/src/Makefile	/^	    list2="$$list2 $$p"; \\$/;"	m
-list2	tbsys/src/Makefile	/^	list2=; for p in $$list; do \\$/;"	m
 listen	tbnet/src/serversocket.cpp	/^bool ServerSocket::listen() {$/;"	f	class:tbnet::ServerSocket
 listen	tbnet/src/transport.cpp	/^IOComponent *Transport::listen(const char *spec, IPacketStreamer *streamer, IServerAdapter *serverAdapter)$/;"	f	class:tbnet::Transport
 load	tbsys/src/config.cpp	/^    int CConfig::load(const char *filename)$/;"	f	class:tbsys::CConfig
-local_target	tbnet/Makefile	/^	    local_target="$$target"; \\$/;"	m
-local_target	tbnet/Makefile	/^	    local_target="$$target-am"; \\$/;"	m
-local_target	tbsys/Makefile	/^	    local_target="$$target"; \\$/;"	m
-local_target	tbsys/Makefile	/^	    local_target="$$target-am"; \\$/;"	m
 localedir	tbnet/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
 localedir	tbnet/src/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
 localedir	tbnet/src/test/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
@@ -3207,8 +2762,6 @@ lock	tbsys/src/StaticMutex.h	/^inline void StaticMutex::lock() const$/;"	f	class
 lock	tbsys/src/tbrwlock.cpp	/^int CRLock::lock() const$/;"	f	class:CRLock
 lock	tbsys/src/tbrwlock.cpp	/^int CWLock::lock() const$/;"	f	class:CWLock
 lock	tbsys/src/threadmutex.h	/^    void lock () {$/;"	f	class:tbsys::CThreadMutex
-locs	tbnet/src/Makefile	/^	locs=`for p in $$list; do echo $$p; done | \\$/;"	m
-locs	tbsys/src/Makefile	/^	locs=`for p in $$list; do echo $$p; done | \\$/;"	m
 log	tbnet/src/stats.cpp	/^void StatCounter::log() {$/;"	f	class:tbnet::StatCounter
 logMessage	tbsys/src/tblog.cpp	/^void CLogger::logMessage(int level,const char *file, int line, const char *function,const char *fmt, ...) {$/;"	f	class:tbsys::CLogger
 mQueueThread	tbsys/test/testfilequeue.cpp	/^CFileQueueThread *mQueueThread = NULL;$/;"	v
@@ -3226,16 +2779,10 @@ m_profiler	tbsys/src/profiler.h	/^	static Profiler m_profiler;$/;"	m	class:tbsys
 m_queuePath	tbsys/src/filequeue.h	/^            char *m_queuePath;$/;"	m	class:tbsys::CFileQueue
 m_readFd	tbsys/src/filequeue.h	/^            int m_readFd;$/;"	m	class:tbsys::CFileQueue
 m_writeFd	tbsys/src/filequeue.h	/^            int m_writeFd;$/;"	m	class:tbsys::CFileQueue
-main	tbnet/config.guess	/^		main()$/;"	f
-main	tbnet/config.guess	/^	main ()$/;"	f
-main	tbnet/config.guess	/^main ()$/;"	f
 main	tbnet/src/test/dotest.cpp	/^int main( int argc, char **argv)$/;"	f
 main	tbnet/test/echoclient.cpp	/^int main(int argc, char *argv[])$/;"	f
 main	tbnet/test/echoserver.cpp	/^int main(int argc, char *argv[])$/;"	f
 main	tbnet/test/httpserver.cpp	/^int main(int argc, char *argv[])$/;"	f
-main	tbsys/config.guess	/^		main()$/;"	f
-main	tbsys/config.guess	/^	main ()$/;"	f
-main	tbsys/config.guess	/^main ()$/;"	f
 main	tbsys/src/Service.cpp	/^int Service::main(int argc,char*argv[])$/;"	f	class:tbutil::Service
 main	tbsys/test/testService.cpp	/^int main(int argc, char* argv[])$/;"	f
 main	tbsys/test/testThreadPool.cpp	/^int main(int argc, char* argv[])$/;"	f
@@ -3249,8 +2796,6 @@ main	tbsys/test/testqueuethread.cpp	/^int main(int argc, char *argv[])$/;"	f
 main	tbsys/test/teststringutil.cpp	/^int main(int argc, char *argv[])$/;"	f
 main	tbsys/test/testthread.cpp	/^int main()$/;"	f
 main	tbsys/test/testtimeutil.cpp	/^int main(int argc, char *argv[])$/;"	f
-make_dummy_depfile	tbnet/depcomp	/^make_dummy_depfile ()$/;"	f
-make_dummy_depfile	tbsys/depcomp	/^make_dummy_depfile ()$/;"	f
 mandir	tbnet/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
 mandir	tbnet/src/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
 mandir	tbnet/src/test/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
@@ -3294,10 +2839,6 @@ name	tbsys/src/ThreadException.cpp	/^string ThreadStartedException::name() const
 name	tbsys/src/ThreadException.cpp	/^string ThreadSyscallException::name() const$/;"	f	class:tbutil::ThreadSyscallException
 name	tbsys/test/testBase.cpp	/^std::string testBase::name() const$/;"	f	class:testBase
 newUUID	tbsys/test/testnetutil.cpp	/^uint64_t newUUID()$/;"	f
-new_distdir	tbnet/Makefile	/^	    new_distdir=$$reldir; \\$/;"	m
-new_distdir	tbsys/Makefile	/^	    new_distdir=$$reldir; \\$/;"	m
-new_top_distdir	tbnet/Makefile	/^	    new_top_distdir=$$reldir; \\$/;"	m
-new_top_distdir	tbsys/Makefile	/^	    new_top_distdir=$$reldir; \\$/;"	m
 node_pointer_type	tbsys/src/linklist.h	/^        typedef NodeT* node_pointer_type;$/;"	t	class:tbsys::LinkList
 noinst_PROGRAMS	tbnet/src/Makefile	/^noinst_PROGRAMS =$/;"	m
 noinst_PROGRAMS	tbnet/test/Makefile	/^noinst_PROGRAMS = echoserver$(EXEEXT) echoclient$(EXEEXT) \\$/;"	m
@@ -3305,20 +2846,6 @@ noinst_PROGRAMS	tbsys/src/Makefile	/^noinst_PROGRAMS =$/;"	m
 noinst_PROGRAMS	tbsys/test/Makefile	/^noinst_PROGRAMS = testfilequeue$(EXEEXT) testqueuethread$(EXEEXT) \\$/;"	m
 noncopyable	tbsys/src/tbsys.h	/^    noncopyable() { }$/;"	f	class:tbutil::noncopyable
 noncopyable	tbsys/src/tbsys.h	/^class noncopyable$/;"	c	namespace:tbutil
-nonempty	tbnet/Makefile	/^  BEGIN { nonempty = 0; } \\$/;"	m
-nonempty	tbnet/Makefile	/^  { items[$$0] = 1; nonempty = 1; } \\$/;"	m
-nonempty	tbnet/src/Makefile	/^  BEGIN { nonempty = 0; } \\$/;"	m
-nonempty	tbnet/src/Makefile	/^  { items[$$0] = 1; nonempty = 1; } \\$/;"	m
-nonempty	tbnet/src/test/Makefile	/^  BEGIN { nonempty = 0; } \\$/;"	m
-nonempty	tbnet/src/test/Makefile	/^  { items[$$0] = 1; nonempty = 1; } \\$/;"	m
-nonempty	tbnet/test/Makefile	/^  BEGIN { nonempty = 0; } \\$/;"	m
-nonempty	tbnet/test/Makefile	/^  { items[$$0] = 1; nonempty = 1; } \\$/;"	m
-nonempty	tbsys/Makefile	/^  BEGIN { nonempty = 0; } \\$/;"	m
-nonempty	tbsys/Makefile	/^  { items[$$0] = 1; nonempty = 1; } \\$/;"	m
-nonempty	tbsys/src/Makefile	/^  BEGIN { nonempty = 0; } \\$/;"	m
-nonempty	tbsys/src/Makefile	/^  { items[$$0] = 1; nonempty = 1; } \\$/;"	m
-nonempty	tbsys/test/Makefile	/^  BEGIN { nonempty = 0; } \\$/;"	m
-nonempty	tbsys/test/Makefile	/^  { items[$$0] = 1; nonempty = 1; } \\$/;"	m
 notify	tbsys/src/Monitor.h	/^Monitor<T>::notify()$/;"	f	class:tbutil::Monitor
 notifyAll	tbsys/src/Monitor.h	/^Monitor<T>::notifyAll()$/;"	f	class:tbutil::Monitor
 notifyImpl	tbsys/src/Monitor.h	/^Monitor<T>::notifyImpl(int nnotify) const$/;"	f	class:tbutil::Monitor
@@ -3452,8 +2979,6 @@ print	tbsys/src/Exception.cpp	/^void IllegalArgumentException::print(ostream& ou
 print	tbsys/src/Exception.cpp	/^void SyscallException::print(ostream& os) const$/;"	f	class:tbutil::SyscallException
 print	tbsys/src/ThreadException.cpp	/^void InvalidTimeoutException::print(ostream& os) const$/;"	f	class:tbutil::InvalidTimeoutException
 print	tbsys/src/ThreadException.cpp	/^void ThreadCreateException::print(ostream& os ) const$/;"	f	class:tbutil::ThreadCreateException
-program_details	tbnet/missing	/^program_details ()$/;"	f
-program_details	tbsys/missing	/^program_details ()$/;"	f
 program_transform_name	tbnet/Makefile	/^program_transform_name = s,x,x,$/;"	m
 program_transform_name	tbnet/src/Makefile	/^program_transform_name = s,x,x,$/;"	m
 program_transform_name	tbnet/src/test/Makefile	/^program_transform_name = s,x,x,$/;"	m
@@ -3481,9 +3006,9 @@ put	tbsys/src/bytebuffer.h	/^        ByteBuffer & ByteBuffer::put(const T & e) $
 put	tbsys/src/bytebuffer.h	/^        ByteBuffer & ByteBuffer::put(const std::vector<T> & v) $/;"	f	class:tbutil::ByteBuffer
 putString	tbsys/src/bytebuffer.cpp	/^ByteBuffer & ByteBuffer::putString(const std::string & v) throw (ByteBuffer::out_of_range)$/;"	f	class:ByteBuffer
 qinfo_head	tbsys/src/filequeue.h	/^    typedef struct qinfo_head {$/;"	s	namespace:tbsys
-qinfo_head	tbsys/src/filequeue.h	/^    } qinfo_head;$/;"	t	namespace:tbsys
+qinfo_head	tbsys/src/filequeue.h	/^    } qinfo_head;$/;"	t	namespace:tbsys	typeref:struct:tbsys::qinfo_head
 queue_item	tbsys/src/filequeue.h	/^    typedef struct queue_item {$/;"	s	namespace:tbsys
-queue_item	tbsys/src/filequeue.h	/^    } queue_item;$/;"	t	namespace:tbsys
+queue_item	tbsys/src/filequeue.h	/^    } queue_item;$/;"	t	namespace:tbsys	typeref:struct:tbsys::queue_item
 queue_size	tbsys/src/filequeue.h	/^        int queue_size;         \/\/ ¶ÓÁÐ³¤¶È$/;"	m	struct:tbsys::qinfo_head
 rawData	tbsys/src/bytebuffer.cpp	/^const ByteBuffer & ByteBuffer::rawData(int index, const char* &dst, $/;"	f	class:ByteBuffer
 rdlock	tbsys/src/tbrwlock.cpp	/^int CRWSimpleLock::rdlock()$/;"	f	class:CRWSimpleLock
@@ -3504,8 +3029,6 @@ read_offset	tbsys/src/filequeue.h	/^        int read_offset;        \/\/ ¶ÁÎÄ¼þµ
 read_seqno	tbsys/src/filequeue.h	/^        uint32_t read_seqno;    \/\/ ¶ÁÎÄ¼þµÄseqno$/;"	m	struct:tbsys::qinfo_head
 reason	tbsys/src/Exception.cpp	/^string IllegalArgumentException::reason() const$/;"	f	class:tbutil::IllegalArgumentException
 recoverRecord	tbsys/src/filequeue.cpp	/^    void CFileQueue::recoverRecord() {$/;"	f	class:tbsys::CFileQueue
-reldir	tbnet/Makefile	/^  reldir="$$dir2"$/;"	m
-reldir	tbsys/Makefile	/^  reldir="$$dir2"$/;"	m
 release	tbsys/src/Lock.h	/^    void release() const$/;"	f	class:tbutil::LockT
 release	tbsys/src/profiler.h	/^	void release() {$/;"	f	class:tbsys::util::Entry
 remaining	tbsys/src/bytebuffer.h	/^            int32_t   remaining() const { return size_ - position_; }$/;"	f	class:tbutil::ByteBuffer
@@ -3541,27 +3064,6 @@ runTimerTask	tbsys/test/testThreadPool.cpp	/^    runTimerTask()$/;"	f	class:Sche
 runTimerTask	tbsys/test/testTimer.cpp	/^    runTimerTask()$/;"	f	class:DestroyTask
 runTimerTask	tbsys/test/testTimer.cpp	/^    runTimerTask()$/;"	f	class:TestTask
 runnable	tbsys/src/thread.h	/^    Runnable *runnable;$/;"	m	class:tbsys::CThread
-sane_makeflags	tbnet/Makefile	/^        sane_makeflags=`printf '%s\\n' "$$MAKEFLAGS" \\$/;"	m
-sane_makeflags	tbnet/Makefile	/^    sane_makeflags=$$MFLAGS; \\$/;"	m
-sane_makeflags	tbnet/Makefile	/^  sane_makeflags=$$MAKEFLAGS; \\$/;"	m
-sane_makeflags	tbnet/src/Makefile	/^        sane_makeflags=`printf '%s\\n' "$$MAKEFLAGS" \\$/;"	m
-sane_makeflags	tbnet/src/Makefile	/^    sane_makeflags=$$MFLAGS; \\$/;"	m
-sane_makeflags	tbnet/src/Makefile	/^  sane_makeflags=$$MAKEFLAGS; \\$/;"	m
-sane_makeflags	tbnet/src/test/Makefile	/^        sane_makeflags=`printf '%s\\n' "$$MAKEFLAGS" \\$/;"	m
-sane_makeflags	tbnet/src/test/Makefile	/^    sane_makeflags=$$MFLAGS; \\$/;"	m
-sane_makeflags	tbnet/src/test/Makefile	/^  sane_makeflags=$$MAKEFLAGS; \\$/;"	m
-sane_makeflags	tbnet/test/Makefile	/^        sane_makeflags=`printf '%s\\n' "$$MAKEFLAGS" \\$/;"	m
-sane_makeflags	tbnet/test/Makefile	/^    sane_makeflags=$$MFLAGS; \\$/;"	m
-sane_makeflags	tbnet/test/Makefile	/^  sane_makeflags=$$MAKEFLAGS; \\$/;"	m
-sane_makeflags	tbsys/Makefile	/^        sane_makeflags=`printf '%s\\n' "$$MAKEFLAGS" \\$/;"	m
-sane_makeflags	tbsys/Makefile	/^    sane_makeflags=$$MFLAGS; \\$/;"	m
-sane_makeflags	tbsys/Makefile	/^  sane_makeflags=$$MAKEFLAGS; \\$/;"	m
-sane_makeflags	tbsys/src/Makefile	/^        sane_makeflags=`printf '%s\\n' "$$MAKEFLAGS" \\$/;"	m
-sane_makeflags	tbsys/src/Makefile	/^    sane_makeflags=$$MFLAGS; \\$/;"	m
-sane_makeflags	tbsys/src/Makefile	/^  sane_makeflags=$$MAKEFLAGS; \\$/;"	m
-sane_makeflags	tbsys/test/Makefile	/^        sane_makeflags=`printf '%s\\n' "$$MAKEFLAGS" \\$/;"	m
-sane_makeflags	tbsys/test/Makefile	/^    sane_makeflags=$$MFLAGS; \\$/;"	m
-sane_makeflags	tbsys/test/Makefile	/^  sane_makeflags=$$MAKEFLAGS; \\$/;"	m
 sbindir	tbnet/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
 sbindir	tbnet/src/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
 sbindir	tbnet/src/test/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
@@ -3572,29 +3074,7 @@ sbindir	tbsys/test/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
 schedule	tbsys/src/Timer.cpp	/^int Timer::schedule(const TimerTaskPtr& task, const Time& delay)$/;"	f	class:tbutil::Timer
 scheduleRepeated	tbsys/src/Timer.cpp	/^int Timer::scheduleRepeated(const TimerTaskPtr& task, const Time& delay)$/;"	f	class:tbutil::Timer
 scheduledTime	tbsys/src/Timer.h	/^        Time scheduledTime;$/;"	m	struct:tbutil::Timer::Token
-sdir	tbnet/Makefile	/^	  *) sdir=$(subdir)\/$(srcdir) ;; \\$/;"	m
-sdir	tbnet/Makefile	/^	  [\\\\\/]* | ?:[\\\\\/]*) sdir="$(srcdir)" ;; \\$/;"	m
-sdir	tbnet/src/Makefile	/^	  *) sdir=$(subdir)\/$(srcdir) ;; \\$/;"	m
-sdir	tbnet/src/Makefile	/^	  [\\\\\/]* | ?:[\\\\\/]*) sdir="$(srcdir)" ;; \\$/;"	m
-sdir	tbnet/src/test/Makefile	/^	  *) sdir=$(subdir)\/$(srcdir) ;; \\$/;"	m
-sdir	tbnet/src/test/Makefile	/^	  [\\\\\/]* | ?:[\\\\\/]*) sdir="$(srcdir)" ;; \\$/;"	m
-sdir	tbnet/test/Makefile	/^	  *) sdir=$(subdir)\/$(srcdir) ;; \\$/;"	m
-sdir	tbnet/test/Makefile	/^	  [\\\\\/]* | ?:[\\\\\/]*) sdir="$(srcdir)" ;; \\$/;"	m
-sdir	tbsys/Makefile	/^	  *) sdir=$(subdir)\/$(srcdir) ;; \\$/;"	m
-sdir	tbsys/Makefile	/^	  [\\\\\/]* | ?:[\\\\\/]*) sdir="$(srcdir)" ;; \\$/;"	m
-sdir	tbsys/src/Makefile	/^	  *) sdir=$(subdir)\/$(srcdir) ;; \\$/;"	m
-sdir	tbsys/src/Makefile	/^	  [\\\\\/]* | ?:[\\\\\/]*) sdir="$(srcdir)" ;; \\$/;"	m
-sdir	tbsys/test/Makefile	/^	  *) sdir=$(subdir)\/$(srcdir) ;; \\$/;"	m
-sdir	tbsys/test/Makefile	/^	  [\\\\\/]* | ?:[\\\\\/]*) sdir="$(srcdir)" ;; \\$/;"	m
 seconds	tbsys/src/Time.cpp	/^Time Time::seconds(Int64 t)$/;"	f	class:tbutil::Time
-sed_butlast	tbnet/Makefile	/^  sed_butlast='s,\/*[^\/]*$$,,'; \\$/;"	m
-sed_butlast	tbsys/Makefile	/^  sed_butlast='s,\/*[^\/]*$$,,'; \\$/;"	m
-sed_first	tbnet/Makefile	/^  sed_first='s,^\\([^\/]*\\)\/.*$$,\\1,'; \\$/;"	m
-sed_first	tbsys/Makefile	/^  sed_first='s,^\\([^\/]*\\)\/.*$$,\\1,'; \\$/;"	m
-sed_last	tbnet/Makefile	/^  sed_last='s,^.*\/\\([^\/]*\\)$$,\\1,'; \\$/;"	m
-sed_last	tbsys/Makefile	/^  sed_last='s,^.*\/\\([^\/]*\\)$$,\\1,'; \\$/;"	m
-sed_rest	tbnet/Makefile	/^  sed_rest='s,^[^\/]*\/*,,'; \\$/;"	m
-sed_rest	tbsys/Makefile	/^  sed_rest='s,^[^\/]*\/*,,'; \\$/;"	m
 self_type	tbsys/src/linklist.h	/^        typedef LinkList<NodeT> self_type;$/;"	t	class:tbsys::LinkList
 sendPacket	tbnet/src/connectionmanager.cpp	/^bool ConnectionManager::sendPacket(uint64_t serverId, Packet *packet, IPacketHandler *packetHandler, void *args, bool noblocking) {$/;"	f	class:tbnet::ConnectionManager
 seqno	tbsys/src/filequeue.h	/^        uint32_t seqno;$/;"	m	struct:tbsys::unsettle
@@ -3662,10 +3142,6 @@ setUsed	tbnet/src/iocomponent.h	/^    void setUsed(bool b) {$/;"	f	class:tbnet::
 setWaitTime	tbnet/src/packetqueuethread.cpp	/^void PacketQueueThread::setWaitTime(int t) {$/;"	f	class:tbnet::PacketQueueThread
 setWriteFinishClose	tbnet/src/connection.h	/^    virtual void setWriteFinishClose(bool v) {$/;"	f	class:tbnet::Connection
 setWriteFinishClose	tbnet/src/tcpconnection.h	/^    void setWriteFinishClose(bool v) {$/;"	f	class:tbnet::TCPConnection
-set_base_from	tbnet/depcomp	/^set_base_from ()$/;"	f
-set_base_from	tbsys/depcomp	/^set_base_from ()$/;"	f
-set_dir_from	tbnet/depcomp	/^set_dir_from ()$/;"	f
-set_dir_from	tbsys/depcomp	/^set_dir_from ()$/;"	f
 sharedstatedir	tbnet/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
 sharedstatedir	tbnet/src/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
 sharedstatedir	tbnet/src/test/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
@@ -3687,55 +3163,6 @@ size	tbnet/src/packetqueue.cpp	/^int PacketQueue::size() {$/;"	f	class:tbnet::Pa
 size	tbnet/src/packetqueuethread.h	/^    size_t size()$/;"	f	class:tbnet::PacketQueueThread
 size	tbsys/src/bytebuffer.h	/^            uint32_t  size() const { return size_; }$/;"	f	class:tbutil::ByteBuffer
 size_	tbsys/src/bytebuffer.h	/^            uint32_t size_;$/;"	m	class:tbutil::ByteBuffer
-skip_next	tbnet/Makefile	/^        -*I) strip_trailopt 'I'; skip_next=yes;; \\$/;"	m
-skip_next	tbnet/Makefile	/^        -*O) strip_trailopt 'O'; skip_next=yes;; \\$/;"	m
-skip_next	tbnet/Makefile	/^        -*l) strip_trailopt 'l'; skip_next=yes;; \\$/;"	m
-skip_next	tbnet/Makefile	/^      -[JT]) skip_next=yes;; \\$/;"	m
-skip_next	tbnet/Makefile	/^      -[dEDm]) skip_next=yes;; \\$/;"	m
-skip_next	tbnet/Makefile	/^    test $$skip_next = yes && { skip_next=no; continue; }; \\$/;"	m
-skip_next	tbnet/Makefile	/^  skip_next=no; \\$/;"	m
-skip_next	tbnet/src/Makefile	/^        -*I) strip_trailopt 'I'; skip_next=yes;; \\$/;"	m
-skip_next	tbnet/src/Makefile	/^        -*O) strip_trailopt 'O'; skip_next=yes;; \\$/;"	m
-skip_next	tbnet/src/Makefile	/^        -*l) strip_trailopt 'l'; skip_next=yes;; \\$/;"	m
-skip_next	tbnet/src/Makefile	/^      -[JT]) skip_next=yes;; \\$/;"	m
-skip_next	tbnet/src/Makefile	/^      -[dEDm]) skip_next=yes;; \\$/;"	m
-skip_next	tbnet/src/Makefile	/^    test $$skip_next = yes && { skip_next=no; continue; }; \\$/;"	m
-skip_next	tbnet/src/Makefile	/^  skip_next=no; \\$/;"	m
-skip_next	tbnet/src/test/Makefile	/^        -*I) strip_trailopt 'I'; skip_next=yes;; \\$/;"	m
-skip_next	tbnet/src/test/Makefile	/^        -*O) strip_trailopt 'O'; skip_next=yes;; \\$/;"	m
-skip_next	tbnet/src/test/Makefile	/^        -*l) strip_trailopt 'l'; skip_next=yes;; \\$/;"	m
-skip_next	tbnet/src/test/Makefile	/^      -[JT]) skip_next=yes;; \\$/;"	m
-skip_next	tbnet/src/test/Makefile	/^      -[dEDm]) skip_next=yes;; \\$/;"	m
-skip_next	tbnet/src/test/Makefile	/^    test $$skip_next = yes && { skip_next=no; continue; }; \\$/;"	m
-skip_next	tbnet/src/test/Makefile	/^  skip_next=no; \\$/;"	m
-skip_next	tbnet/test/Makefile	/^        -*I) strip_trailopt 'I'; skip_next=yes;; \\$/;"	m
-skip_next	tbnet/test/Makefile	/^        -*O) strip_trailopt 'O'; skip_next=yes;; \\$/;"	m
-skip_next	tbnet/test/Makefile	/^        -*l) strip_trailopt 'l'; skip_next=yes;; \\$/;"	m
-skip_next	tbnet/test/Makefile	/^      -[JT]) skip_next=yes;; \\$/;"	m
-skip_next	tbnet/test/Makefile	/^      -[dEDm]) skip_next=yes;; \\$/;"	m
-skip_next	tbnet/test/Makefile	/^    test $$skip_next = yes && { skip_next=no; continue; }; \\$/;"	m
-skip_next	tbnet/test/Makefile	/^  skip_next=no; \\$/;"	m
-skip_next	tbsys/Makefile	/^        -*I) strip_trailopt 'I'; skip_next=yes;; \\$/;"	m
-skip_next	tbsys/Makefile	/^        -*O) strip_trailopt 'O'; skip_next=yes;; \\$/;"	m
-skip_next	tbsys/Makefile	/^        -*l) strip_trailopt 'l'; skip_next=yes;; \\$/;"	m
-skip_next	tbsys/Makefile	/^      -[JT]) skip_next=yes;; \\$/;"	m
-skip_next	tbsys/Makefile	/^      -[dEDm]) skip_next=yes;; \\$/;"	m
-skip_next	tbsys/Makefile	/^    test $$skip_next = yes && { skip_next=no; continue; }; \\$/;"	m
-skip_next	tbsys/Makefile	/^  skip_next=no; \\$/;"	m
-skip_next	tbsys/src/Makefile	/^        -*I) strip_trailopt 'I'; skip_next=yes;; \\$/;"	m
-skip_next	tbsys/src/Makefile	/^        -*O) strip_trailopt 'O'; skip_next=yes;; \\$/;"	m
-skip_next	tbsys/src/Makefile	/^        -*l) strip_trailopt 'l'; skip_next=yes;; \\$/;"	m
-skip_next	tbsys/src/Makefile	/^      -[JT]) skip_next=yes;; \\$/;"	m
-skip_next	tbsys/src/Makefile	/^      -[dEDm]) skip_next=yes;; \\$/;"	m
-skip_next	tbsys/src/Makefile	/^    test $$skip_next = yes && { skip_next=no; continue; }; \\$/;"	m
-skip_next	tbsys/src/Makefile	/^  skip_next=no; \\$/;"	m
-skip_next	tbsys/test/Makefile	/^        -*I) strip_trailopt 'I'; skip_next=yes;; \\$/;"	m
-skip_next	tbsys/test/Makefile	/^        -*O) strip_trailopt 'O'; skip_next=yes;; \\$/;"	m
-skip_next	tbsys/test/Makefile	/^        -*l) strip_trailopt 'l'; skip_next=yes;; \\$/;"	m
-skip_next	tbsys/test/Makefile	/^      -[JT]) skip_next=yes;; \\$/;"	m
-skip_next	tbsys/test/Makefile	/^      -[dEDm]) skip_next=yes;; \\$/;"	m
-skip_next	tbsys/test/Makefile	/^    test $$skip_next = yes && { skip_next=no; continue; }; \\$/;"	m
-skip_next	tbsys/test/Makefile	/^  skip_next=no; \\$/;"	m
 socketConnect	tbnet/src/tcpcomponent.cpp	/^bool TCPComponent::socketConnect()$/;"	f	class:tbnet::TCPComponent
 source_list	tbnet/src/Makefile	/^source_list = channel.cpp channelpool.cpp connection.cpp controlpacket.cpp defaultpacketstreamer.cpp epollsocketevent.cpp httppacketstreamer.cpp httprequestpacket.cpp httpresponsepacket.cpp iocomponent.cpp packet.cpp packetqueue.cpp packetqueuethread.cpp serversocket.cpp socket.cpp socketevent.cpp stats.cpp tcpacceptor.cpp tcpcomponent.cpp tcpconnection.cpp transport.cpp udpcomponent.cpp udpconnection.cpp connectionmanager.cpp$/;"	m
 source_list	tbsys/src/Makefile	/^source_list = config.cpp defaultrunnable.cpp filequeue.cpp \\$/;"	m
@@ -3747,10 +3174,6 @@ srcdir	tbnet/test/Makefile	/^srcdir = .$/;"	m
 srcdir	tbsys/Makefile	/^srcdir = .$/;"	m
 srcdir	tbsys/src/Makefile	/^srcdir = .$/;"	m
 srcdir	tbsys/test/Makefile	/^srcdir = .$/;"	m
-srcdirstrip	tbnet/src/Makefile	/^  srcdirstrip=`echo "$(srcdir)" | sed 's\/[].[^$$\\\\*|]\/\\\\\\\\&\/g'`$/;"	m
-srcdirstrip	tbnet/src/Makefile	/^am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;$/;"	m
-srcdirstrip	tbsys/src/Makefile	/^  srcdirstrip=`echo "$(srcdir)" | sed 's\/[].[^$$\\\\*|]\/\\\\\\\\&\/g'`$/;"	m
-srcdirstrip	tbsys/src/Makefile	/^am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;$/;"	m
 ssleep	tbsys/src/TbThread.cpp	/^void Thread::ssleep(const tbutil::Time& timeout)$/;"	f	class:tbutil::Thread
 start	tbnet/src/transport.cpp	/^bool Transport::start() $/;"	f	class:tbnet::Transport
 start	tbnet/test/echoclient.cpp	/^void EchoClient::start(int conncount)$/;"	f	class:EchoClient
@@ -3815,8 +3238,6 @@ tardir	tbsys/Makefile	/^	tardir=$(distdir) && $(am__tar) | GZIP=$(GZIP_ENV) gzip
 tardir	tbsys/Makefile	/^	tardir=$(distdir) && $(am__tar) | XZ_OPT=$${XZ_OPT--e} xz -c >$(distdir).tar.xz$/;"	m
 tardir	tbsys/Makefile	/^	tardir=$(distdir) && $(am__tar) | compress -c >$(distdir).tar.Z$/;"	m
 tardir	tbsys/Makefile	/^	tardir=$(distdir) && $(am__tar) | lzip -c $${LZIP_OPT--9} >$(distdir).tar.lz$/;"	m
-target	tbnet/Makefile	/^	target=`echo $@ | sed s\/-recursive\/\/`; \\$/;"	m
-target	tbsys/Makefile	/^	target=`echo $@ | sed s\/-recursive\/\/`; \\$/;"	m
 target_alias	tbnet/Makefile	/^target_alias = $/;"	m
 target_alias	tbnet/src/Makefile	/^target_alias = $/;"	m
 target_alias	tbnet/src/test/Makefile	/^target_alias = $/;"	m
@@ -4054,11 +3475,7 @@ top_builddir	tbnet/test/Makefile	/^top_builddir = ..$/;"	m
 top_builddir	tbsys/Makefile	/^top_builddir = .$/;"	m
 top_builddir	tbsys/src/Makefile	/^top_builddir = ..$/;"	m
 top_builddir	tbsys/test/Makefile	/^top_builddir = ..$/;"	m
-top_distdir	tbnet/Makefile	/^	        top_distdir="$$new_top_distdir" \\$/;"	m
-top_distdir	tbnet/Makefile	/^	    echo " (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) top_distdir="$$new_top_distdir" distdir="$$new_distdir" \\\\"; \\$/;"	m
 top_distdir	tbnet/Makefile	/^top_distdir = $(distdir)$/;"	m
-top_distdir	tbsys/Makefile	/^	        top_distdir="$$new_top_distdir" \\$/;"	m
-top_distdir	tbsys/Makefile	/^	    echo " (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) top_distdir="$$new_top_distdir" distdir="$$new_distdir" \\\\"; \\$/;"	m
 top_distdir	tbsys/Makefile	/^top_distdir = $(distdir)$/;"	m
 top_srcdir	tbnet/Makefile	/^top_srcdir = .$/;"	m
 top_srcdir	tbnet/src/Makefile	/^top_srcdir = ..$/;"	m
@@ -4067,13 +3484,6 @@ top_srcdir	tbnet/test/Makefile	/^top_srcdir = ..$/;"	m
 top_srcdir	tbsys/Makefile	/^top_srcdir = .$/;"	m
 top_srcdir	tbsys/src/Makefile	/^top_srcdir = ..$/;"	m
 top_srcdir	tbsys/test/Makefile	/^top_srcdir = ..$/;"	m
-topsrcdirstrip	tbnet/Makefile	/^	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's\/[].[^$$\\\\*]\/\\\\\\\\&\/g'`; \\$/;"	m
-topsrcdirstrip	tbnet/src/Makefile	/^	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's\/[].[^$$\\\\*]\/\\\\\\\\&\/g'`; \\$/;"	m
-topsrcdirstrip	tbnet/src/test/Makefile	/^	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's\/[].[^$$\\\\*]\/\\\\\\\\&\/g'`; \\$/;"	m
-topsrcdirstrip	tbnet/test/Makefile	/^	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's\/[].[^$$\\\\*]\/\\\\\\\\&\/g'`; \\$/;"	m
-topsrcdirstrip	tbsys/Makefile	/^	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's\/[].[^$$\\\\*]\/\\\\\\\\&\/g'`; \\$/;"	m
-topsrcdirstrip	tbsys/src/Makefile	/^	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's\/[].[^$$\\\\*]\/\\\\\\\\&\/g'`; \\$/;"	m
-topsrcdirstrip	tbsys/test/Makefile	/^	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's\/[].[^$$\\\\*]\/\\\\\\\\&\/g'`; \\$/;"	m
 transform	tbnet/Makefile	/^transform = $(program_transform_name)$/;"	m
 transform	tbnet/src/Makefile	/^transform = $(program_transform_name)$/;"	m
 transform	tbnet/src/test/Makefile	/^transform = $(program_transform_name)$/;"	m
@@ -4093,20 +3503,6 @@ tryLock	tbsys/src/tbrwlock.cpp	/^int CWLock::tryLock() const$/;"	f	class:CWLock
 trylock	tbsys/src/threadmutex.h	/^    int trylock () {$/;"	f	class:tbsys::CThreadMutex
 tryrdlock	tbsys/src/tbrwlock.cpp	/^int CRWSimpleLock::tryrdlock()$/;"	f	class:CRWSimpleLock
 trywrlock	tbsys/src/tbrwlock.cpp	/^int CRWSimpleLock::trywrlock()$/;"	f	class:CRWSimpleLock
-unique	tbnet/Makefile	/^	  test -n "$$unique" || unique=$$empty_fix; \\$/;"	m
-unique	tbnet/Makefile	/^  unique=`for i in $$list; do \\$/;"	m
-unique	tbnet/src/Makefile	/^	  test -n "$$unique" || unique=$$empty_fix; \\$/;"	m
-unique	tbnet/src/Makefile	/^  unique=`for i in $$list; do \\$/;"	m
-unique	tbnet/src/test/Makefile	/^	  test -n "$$unique" || unique=$$empty_fix; \\$/;"	m
-unique	tbnet/src/test/Makefile	/^  unique=`for i in $$list; do \\$/;"	m
-unique	tbnet/test/Makefile	/^	  test -n "$$unique" || unique=$$empty_fix; \\$/;"	m
-unique	tbnet/test/Makefile	/^  unique=`for i in $$list; do \\$/;"	m
-unique	tbsys/Makefile	/^	  test -n "$$unique" || unique=$$empty_fix; \\$/;"	m
-unique	tbsys/Makefile	/^  unique=`for i in $$list; do \\$/;"	m
-unique	tbsys/src/Makefile	/^	  test -n "$$unique" || unique=$$empty_fix; \\$/;"	m
-unique	tbsys/src/Makefile	/^  unique=`for i in $$list; do \\$/;"	m
-unique	tbsys/test/Makefile	/^	  test -n "$$unique" || unique=$$empty_fix; \\$/;"	m
-unique	tbsys/test/Makefile	/^  unique=`for i in $$list; do \\$/;"	m
 unlock	tbsys/src/Monitor.h	/^Monitor<T>::unlock() const$/;"	f	class:tbutil::Monitor
 unlock	tbsys/src/Mutex.cpp	/^void Mutex::unlock() const$/;"	f	class:tbutil::Mutex
 unlock	tbsys/src/Mutex.cpp	/^void Mutex::unlock(LockState& state) const$/;"	f	class:tbutil::Mutex
@@ -4119,7 +3515,7 @@ unlock	tbsys/src/tbrwlock.cpp	/^int CRWSimpleLock::unlock()$/;"	f	class:CRWSimpl
 unlock	tbsys/src/tbrwlock.cpp	/^int CWLock::unlock() const$/;"	f	class:CWLock
 unlock	tbsys/src/threadmutex.h	/^    void unlock() {$/;"	f	class:tbsys::CThreadMutex
 unsettle	tbsys/src/filequeue.h	/^    typedef struct unsettle {$/;"	s	namespace:tbsys
-unsettle	tbsys/src/filequeue.h	/^    } unsettle;$/;"	t	namespace:tbsys
+unsettle	tbsys/src/filequeue.h	/^    } unsettle;$/;"	t	namespace:tbsys	typeref:struct:tbsys::unsettle
 urlDecode	tbsys/src/stringutil.cpp	/^    char *CStringUtil::urlDecode(const char *src, char *dest)$/;"	f	class:tbsys::CStringUtil
 util	tbsys/src/profiler.cpp	/^    namespace util$/;"	n	namespace:tbsys	file:
 util	tbsys/src/profiler.h	/^namespace tbsys { namespace util {$/;"	n	namespace:tbsys
